@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xbrli:xbrl xml:lang="nl" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:bd-alg="http://www.nltaxonomie.nl/nt11/bd/20161207/dictionary/bd-algemeen" xmlns:bd-burg="http://www.nltaxonomie.nl/nt11/bd/20161207/dictionary/bd-burgers" xmlns:bd-burg-tuple="http://www.nltaxonomie.nl/nt11/bd/20161207/dictionary/bd-burg-tuples" xmlns:bd-dim-mem="http://www.nltaxonomie.nl/nt11/bd/20161207/dictionary/bd-domain-members" xmlns:bd-dim-dim="http://www.nltaxonomie.nl/nt11/bd/20161207/validation/bd-axes" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:frc-i="https://www.sbrbanken.nl/bt11/frc/20161209/dictionary/frc-data" xmlns:kvk-t="http://www.nltaxonomie.nl/nt11/kvk/20161214/dictionary/kvk-tuples" xmlns:kvk-i="http://www.nltaxonomie.nl/nt11/kvk/20161214/dictionary/kvk-data" xmlns:rj-i="http://www.nltaxonomie.nl/nt11/rj/20161214/dictionary/rj-data" xmlns:nl-cd="http://www.nltaxonomie.nl/nt11/sbr/20160610/dictionary/nl-common-data" xmlns:frc-dim="https://www.sbrbanken.nl/bt11/frc/20161209/dictionary/frc-axes" xmlns:frc-dm="https://www.sbrbanken.nl/bt11/frc/20161209/dictionary/frc-domains" xmlns:venj-bw2-i="http://www.nltaxonomie.nl/nt11/venj/20161214/dictionary/venj-bw2-data">
+	<link:schemaRef xlink:type="simple" xlink:href="https://www.sbrbanken.nl/bt11/frc/20161209/entrypoints/frc-rpt-ihz-aangifte-2016.xsd"/>
+	<xbrli:context id="context0">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:context id="context31">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-dim:LocationActualActivitiesDescriptionAddressNLSpecificationAxis">
+				<frc-dm:DescriptionLocationNLTypedMember>Advies</frc-dm:DescriptionLocationNLTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="context42">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-dim:BankAccountSpecificationAxis">
+				<frc-dm:BankAccountSpecificationTypedMember>NL12ABCD1234567890</frc-dm:BankAccountSpecificationTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_Duration_Declarant_Abroad">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Declarant</xbrldi:explicitMember>
+			<xbrldi:explicitMember dimension="bd-dim-dim:ResidenceDimension">bd-dim-mem:Abroad</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_Duration_Declarant_Netherlands">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Declarant</xbrldi:explicitMember>
+			<xbrldi:explicitMember dimension="bd-dim-dim:ResidenceDimension">bd-dim-mem:Netherlands</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_Duration_Declarant">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Declarant</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_InstantEnd_Declarant">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2016-12-31</xbrli:instant>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:TimeDimension">bd-dim-mem:End</xbrldi:explicitMember>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Declarant</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_InstantBegin_Declarant">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:instant>2015-12-31</xbrli:instant>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:TimeDimension">bd-dim-mem:Begin</xbrldi:explicitMember>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Declarant</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:context id="Context_Duration_Partner">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.bank.nl/bank-id">12345678</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2016-01-01</xbrli:startDate>
+			<xbrli:endDate>2016-12-31</xbrli:endDate>
+		</xbrli:period>
+		<xbrli:scenario>
+			<xbrldi:explicitMember dimension="bd-dim-dim:PartyDimension">bd-dim-mem:Partner</xbrldi:explicitMember>
+		</xbrli:scenario>
+	</xbrli:context>
+	<xbrli:unit id="EUR">
+		<xbrli:measure>iso4217:EUR</xbrli:measure>
+	</xbrli:unit>
+	<xbrli:unit id="PURE">
+		<xbrli:measure>xbrli:pure</xbrli:measure>
+	</xbrli:unit>
+	
+	<venj-bw2-i:BasisOfPreparation contextRef="context0">Fiscaal</venj-bw2-i:BasisOfPreparation>
+	<bd-alg:Initials contextRef="Context_Duration_Declarant">C.D.</bd-alg:Initials>
+	<bd-alg:Initials contextRef="Context_Duration_Partner">V</bd-alg:Initials>
+	<bd-alg:Prefix contextRef="Context_Duration_Partner">de</bd-alg:Prefix>
+	<bd-alg:Surname contextRef="Context_Duration_Declarant">Maximus</bd-alg:Surname>
+	<bd-alg:Surname contextRef="Context_Duration_Partner">Wia</bd-alg:Surname>
+	<bd-burg:ActivitiesWorkResultsGrossTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">777</bd-burg:ActivitiesWorkResultsGrossTotalAmount>
+	<bd-burg:AlimonyDeductibleCostsTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">112</bd-burg:AlimonyDeductibleCostsTotal>
+	<bd-burg:AlimonyReceivedTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">499</bd-burg:AlimonyReceivedTotalAmount>
+	<bd-burg:AssetBankAccountSavingsCertificatesEtcBalance decimals="INF" contextRef="Context_Duration_Declarant_Abroad" unitRef="EUR">19039</bd-burg:AssetBankAccountSavingsCertificatesEtcBalance>
+	<bd-burg:AssetBankAccountSavingsCertificatesEtcBalance decimals="INF" contextRef="Context_Duration_Declarant_Netherlands" unitRef="EUR">16057</bd-burg:AssetBankAccountSavingsCertificatesEtcBalance>
+	<bd-burg:AssetsOtherInConnectionWithResultFromActivitiesTotal decimals="INF" contextRef="Context_InstantBegin_Declarant" unitRef="EUR">26200</bd-burg:AssetsOtherInConnectionWithResultFromActivitiesTotal>
+	<bd-burg:AssetsOtherInConnectionWithResultFromActivitiesTotal decimals="INF" contextRef="Context_InstantEnd_Declarant" unitRef="EUR">27400</bd-burg:AssetsOtherInConnectionWithResultFromActivitiesTotal>
+	<bd-burg:AssetsOtherTotalValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">46700</bd-burg:AssetsOtherTotalValue>
+	<bd-burg:CapitalInsuranceNonExemptedPartTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">37134</bd-burg:CapitalInsuranceNonExemptedPartTotal>
+	<bd-burg:DebtsBox3ThresholdAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">6000</bd-burg:DebtsBox3ThresholdAmount>
+	<bd-burg:DebtsBox3TotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">58333</bd-burg:DebtsBox3TotalAmount>
+	<bd-burg:DebtsInConnectionWithResultsFromActivitiesTotal decimals="INF" contextRef="Context_InstantBegin_Declarant" unitRef="EUR">32000</bd-burg:DebtsInConnectionWithResultsFromActivitiesTotal>
+	<bd-burg:DebtsInConnectionWithResultsFromActivitiesTotal decimals="INF" contextRef="Context_InstantEnd_Declarant" unitRef="EUR">32200</bd-burg:DebtsInConnectionWithResultsFromActivitiesTotal>
+	<bd-burg:EmployedPersonsTaxCreditTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">34</bd-burg:EmployedPersonsTaxCreditTotalAmount>
+	<bd-burg:FictitiousActivitiesCostsTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1223</bd-burg:FictitiousActivitiesCostsTotalAmount>
+	<bd-burg:FictitiousActivitiesResultGrossTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">822</bd-burg:FictitiousActivitiesResultGrossTotalAmount>
+	<bd-burg:GreenInvestmentExemption decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">31840</bd-burg:GreenInvestmentExemption>
+	<bd-burg:ImmovablePropertyInConnectionWithResultsFromActivitiesTotal decimals="INF" contextRef="Context_InstantBegin_Declarant" unitRef="EUR">232000</bd-burg:ImmovablePropertyInConnectionWithResultsFromActivitiesTotal>
+	<bd-burg:ImmovablePropertyInConnectionWithResultsFromActivitiesTotal decimals="INF" contextRef="Context_InstantEnd_Declarant" unitRef="EUR">237000</bd-burg:ImmovablePropertyInConnectionWithResultsFromActivitiesTotal>
+	<bd-burg:ImmovablePropertyOtherTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">164966</bd-burg:ImmovablePropertyOtherTotal>
+	<bd-burg:IncomeEmploymentWithoutWageTax decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">499</bd-burg:IncomeEmploymentWithoutWageTax>
+	<bd-burg:LivingTogetherSpousesExists contextRef="Context_Duration_Declarant">true</bd-burg:LivingTogetherSpousesExists>
+	<bd-burg:MaintenanceObligationsPeriodicPaymentsPartyFilingTaxReturnPart decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1410</bd-burg:MaintenanceObligationsPeriodicPaymentsPartyFilingTaxReturnPart>
+	<bd-burg:MaintenanceObligationsPeriodicPaymentsTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1410</bd-burg:MaintenanceObligationsPeriodicPaymentsTotal>
+	<bd-burg:MaintenanceRelativesPensionPremiumPaidTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">240</bd-burg:MaintenanceRelativesPensionPremiumPaidTotal>
+	<bd-burg:MaintenanceRelativesPeriodicPaymentsPaidTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">370</bd-burg:MaintenanceRelativesPeriodicPaymentsPaidTotal>
+	<bd-burg:MaintenanceRelativesRedemptionSumPaidTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">200</bd-burg:MaintenanceRelativesRedemptionSumPaidTotal>
+	<bd-burg:MarriedEntireTaxYear contextRef="Context_Duration_Declarant">true</bd-burg:MarriedEntireTaxYear>
+	<bd-burg:OverallIncome decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">382570</bd-burg:OverallIncome>
+	<bd-burg:OwnHouseAcquisitionDebtTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">2062</bd-burg:OwnHouseAcquisitionDebtTotal>
+	<bd-burg:OwnHouseCostLoan decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">435</bd-burg:OwnHouseCostLoan>
+	<bd-burg:OwnHouseDebtSoldOwnHouse decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">107000</bd-burg:OwnHouseDebtSoldOwnHouse>
+	<bd-burg:OwnHouseExemptionAmountCapitalInsuranceSavingsAccountParticipatingInterestAccount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">500</bd-burg:OwnHouseExemptionAmountCapitalInsuranceSavingsAccountParticipatingInterestAccount>
+	<bd-burg:OwnHouseGroundLeaseBuildingPeriodicPayments decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">189</bd-burg:OwnHouseGroundLeaseBuildingPeriodicPayments>
+	<bd-burg:OwnHouseInterestLoan decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">2062</bd-burg:OwnHouseInterestLoan>
+	<bd-burg:OwnHousePeriodicContributionsTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">599</bd-burg:OwnHousePeriodicContributionsTotalAmount>
+	<bd-burg:OwnHousePrincipalResidenceRentalValueTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">559</bd-burg:OwnHousePrincipalResidenceRentalValueTotal>
+	<bd-burg:OwnHousePurchasePriceIncludingCosts decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">450800</bd-burg:OwnHousePurchasePriceIncludingCosts>
+	<bd-burg:OwnHouseRenovationMaintenanceCosts decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">8500</bd-burg:OwnHouseRenovationMaintenanceCosts>
+	<bd-burg:OwnHouseSellingPriceWithoutCosts decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">120000</bd-burg:OwnHouseSellingPriceWithoutCosts>
+	<bd-burg:OwnHouseTaxableBenefitCapitalInsuranceSavingsAccountParticipatingInterestAccount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">6190</bd-burg:OwnHouseTaxableBenefitCapitalInsuranceSavingsAccountParticipatingInterestAccount>
+	<bd-burg:OwnHouseTemporaryLetIncomeTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">307</bd-burg:OwnHouseTemporaryLetIncomeTotal>
+	<bd-burg:PeriodicPaymentsDeductibleCostsTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">110</bd-burg:PeriodicPaymentsDeductibleCostsTotal>
+	<bd-burg:PeriodicPaymentsOtherTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1498</bd-burg:PeriodicPaymentsOtherTotalAmount>
+	<bd-burg:PeriodicPaymentsRightsValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">29000</bd-burg:PeriodicPaymentsRightsValue>
+	<bd-burg:PersonAttachedDeduction decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">34705</bd-burg:PersonAttachedDeduction>
+	<bd-burg:PersonDependentDeductionNegativeTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">4316</bd-burg:PersonDependentDeductionNegativeTotal>
+	<bd-burg:PremiumsAnnuitiesForDisabledChildrenTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">175</bd-burg:PremiumsAnnuitiesForDisabledChildrenTotal>
+	<bd-burg:PremiumsPrivateInsurancePoliciesTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">364</bd-burg:PremiumsPrivateInsurancePoliciesTotal>
+	<bd-burg:PreservedIncomeTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">2000</bd-burg:PreservedIncomeTotal>
+	<bd-burg:SavingsAndInvestmentsTaxBasePartyShare decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">530909</bd-burg:SavingsAndInvestmentsTaxBasePartyShare>
+	<bd-burg:StockTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">299220</bd-burg:StockTotal>
+	<bd-burg:SubstantialInterestAcquisitionPrice decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">20250</bd-burg:SubstantialInterestAcquisitionPrice>
+	<bd-burg:SubstantialInterestBenefitsSharePartyFilingTaxReturn decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">257110</bd-burg:SubstantialInterestBenefitsSharePartyFilingTaxReturn>
+	<bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">140</bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsTotal>
+	<bd-burg:SubstantialInterestRegularBenefitsGrossTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">255000</bd-burg:SubstantialInterestRegularBenefitsGrossTotal>
+	<bd-burg:SubstantialInterestTransferPriceTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">22500</bd-burg:SubstantialInterestTransferPriceTotal>
+	<bd-burg:TravelAllowanceReceivedTotalAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">771</bd-burg:TravelAllowanceReceivedTotalAmount>
+	<bd-burg:TrustCapitalDescription contextRef="Context_Duration_Declarant">Vermogen Antillenfonds</bd-burg:TrustCapitalDescription>
+	<bd-burg:TrustCapitalInvolvementExists contextRef="Context_Duration_Declarant">true</bd-burg:TrustCapitalInvolvementExists>
+	<bd-burg:ValueCashAndReceivablesTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">20000</bd-burg:ValueCashAndReceivablesTotal>
+	<bd-burg:VentureCapitalLoansInvestmentsLossPartyFilingTaxReturn decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">11500</bd-burg:VentureCapitalLoansInvestmentsLossPartyFilingTaxReturn>
+	<bd-burg:VentureCapitalLoansInvestmentsLossTotal decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">11500</bd-burg:VentureCapitalLoansInvestmentsLossTotal>
+	<bd-burg-tuple:AssetBankAccountSavingsCertificateEtcSpecification>
+		<bd-burg:AssetBankAccountSavingsAccountnumberBox3 contextRef="Context_Duration_Declarant_Netherlands">147835836</bd-burg:AssetBankAccountSavingsAccountnumberBox3>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcCreditUndivided decimals="INF" contextRef="Context_Duration_Declarant_Netherlands" unitRef="EUR">13500</bd-burg:AssetBankAccountSavingsCertificateEtcCreditUndivided>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcDescription contextRef="Context_Duration_Declarant_Netherlands">banktegoeden</bd-burg:AssetBankAccountSavingsCertificateEtcDescription>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcValue decimals="INF" contextRef="Context_Duration_Declarant_Netherlands" unitRef="EUR">16057</bd-burg:AssetBankAccountSavingsCertificateEtcValue>
+	</bd-burg-tuple:AssetBankAccountSavingsCertificateEtcSpecification>
+	<bd-burg-tuple:AssetBankAccountSavingsCertificateEtcSpecification>
+		<bd-burg:AssetBankAccountSavingsAccountnumberBox3 contextRef="Context_Duration_Declarant_Abroad">IM280019400644750000</bd-burg:AssetBankAccountSavingsAccountnumberBox3>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcCountryCode contextRef="Context_Duration_Declarant_Abroad">IMN</bd-burg:AssetBankAccountSavingsCertificateEtcCountryCode>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcDescription contextRef="Context_Duration_Declarant_Abroad">banktegoeden</bd-burg:AssetBankAccountSavingsCertificateEtcDescription>
+		<bd-burg:AssetBankAccountSavingsCertificateEtcValue decimals="INF" contextRef="Context_Duration_Declarant_Abroad" unitRef="EUR">19039</bd-burg:AssetBankAccountSavingsCertificateEtcValue>
+	</bd-burg-tuple:AssetBankAccountSavingsCertificateEtcSpecification>
+	<bd-burg-tuple:AssetsOtherSpecification>
+		<bd-burg:AssetsOtherDescription contextRef="Context_Duration_Declarant">ov bezittingen</bd-burg:AssetsOtherDescription>
+		<bd-burg:AssetsOtherValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">46700</bd-burg:AssetsOtherValue>
+	</bd-burg-tuple:AssetsOtherSpecification>
+	<bd-burg-tuple:DebtBox3Specification>
+		<bd-burg:DebtBox3Amount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">58333</bd-burg:DebtBox3Amount>
+		<bd-burg:DebtBox3DebtAccountNumberBalance decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">58333</bd-burg:DebtBox3DebtAccountNumberBalance>
+		<bd-burg:DebtBox3DebtAccountNumberBalanceTaxpayerInterest decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">58333</bd-burg:DebtBox3DebtAccountNumberBalanceTaxpayerInterest>
+		<bd-burg:DebtBox3Description contextRef="Context_Duration_Declarant">Hypotheekschuld Grieks pand</bd-burg:DebtBox3Description>
+		<bd-burg:DebtBox3IdentificationNumber contextRef="Context_Duration_Declarant">GR1601101250000000012300695</bd-burg:DebtBox3IdentificationNumber>
+	</bd-burg-tuple:DebtBox3Specification>
+	<bd-burg-tuple:ExemptedWagesInternationalOrganisationPresentWorkSpecification>
+		<bd-burg:ExemptedWagesInternationalOrganisationPresentWorkAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">579</bd-burg:ExemptedWagesInternationalOrganisationPresentWorkAmount>
+		<bd-burg:ExemptedWagesInternationalOrganisationPresentWorkName contextRef="Context_Duration_Declarant">EU</bd-burg:ExemptedWagesInternationalOrganisationPresentWorkName>
+	</bd-burg-tuple:ExemptedWagesInternationalOrganisationPresentWorkSpecification>
+	<bd-burg-tuple:ExemptedWagesInternationalOrganisationPresentWorkSpecification>
+		<bd-burg:ExemptedWagesInternationalOrganisationPresentWorkAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">789</bd-burg:ExemptedWagesInternationalOrganisationPresentWorkAmount>
+		<bd-burg:ExemptedWagesInternationalOrganisationPresentWorkName contextRef="Context_Duration_Declarant">VN</bd-burg:ExemptedWagesInternationalOrganisationPresentWorkName>
+	</bd-burg-tuple:ExemptedWagesInternationalOrganisationPresentWorkSpecification>
+	<bd-burg-tuple:ExemptedWagesInternationalOrganisationPreviousWorkSpecification>
+		<bd-burg:ExemptedWagesInternationalOrganisationPreviousWorkAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1702</bd-burg:ExemptedWagesInternationalOrganisationPreviousWorkAmount>
+	</bd-burg-tuple:ExemptedWagesInternationalOrganisationPreviousWorkSpecification>
+	<bd-burg-tuple:ExemptedWagesInternationalOrganisationPreviousWorkSpecification>
+		<bd-burg:ExemptedWagesInternationalOrganisationPreviousWorkAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">533</bd-burg:ExemptedWagesInternationalOrganisationPreviousWorkAmount>
+	</bd-burg-tuple:ExemptedWagesInternationalOrganisationPreviousWorkSpecification>
+	<bd-burg-tuple:ImmovablePropertyOtherSpecification>
+		<bd-burg:ImmovablePropertyOtherAddress contextRef="Context_Duration_Declarant">Grieks pand</bd-burg:ImmovablePropertyOtherAddress>
+		<bd-burg:ImmovablePropertyOtherValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">164966</bd-burg:ImmovablePropertyOtherValue>
+	</bd-burg-tuple:ImmovablePropertyOtherSpecification>
+	<bd-burg-tuple:IncomePresentWorkAbroadWithoutDutchWageTaxSpecification>
+		<bd-burg:IncomePresentWorkAbroadWithoutDutchWageTaxAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1900</bd-burg:IncomePresentWorkAbroadWithoutDutchWageTaxAmount>
+	</bd-burg-tuple:IncomePresentWorkAbroadWithoutDutchWageTaxSpecification>
+	<bd-burg-tuple:IncomePreviousWorkAbroadWithoutDutchWageTaxSpecification>
+		<bd-burg:IncomePreviousWorkAbroadWithoutDutchWageTaxAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1600</bd-burg:IncomePreviousWorkAbroadWithoutDutchWageTaxAmount>
+	</bd-burg-tuple:IncomePreviousWorkAbroadWithoutDutchWageTaxSpecification>
+	<bd-burg-tuple:OwnHouseDebtSpecification>
+		<bd-burg:OwnHouseDebtAccountNumber contextRef="Context_Duration_Declarant">banknr x 7-1</bd-burg:OwnHouseDebtAccountNumber>
+		<bd-burg:OwnHouseDebtCostMoneyLoansDeductible decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">56</bd-burg:OwnHouseDebtCostMoneyLoansDeductible>
+		<bd-burg:OwnHouseDebtDescription contextRef="Context_Duration_Declarant">lening hypotheek 1 woning</bd-burg:OwnHouseDebtDescription>
+		<bd-burg:OwnHouseDebtInterestDeductible decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1051</bd-burg:OwnHouseDebtInterestDeductible>
+		<bd-burg:OwnHouseDebtReportedPeriod decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">2000</bd-burg:OwnHouseDebtReportedPeriod>
+	</bd-burg-tuple:OwnHouseDebtSpecification>
+	<bd-burg-tuple:OwnHouseDebtSpecification>
+		<bd-burg:OwnHouseDebtAccountNumber contextRef="Context_Duration_Declarant">banknr x 7-2</bd-burg:OwnHouseDebtAccountNumber>
+		<bd-burg:OwnHouseDebtCostMoneyLoansDeductible decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">379</bd-burg:OwnHouseDebtCostMoneyLoansDeductible>
+		<bd-burg:OwnHouseDebtDescription contextRef="Context_Duration_Declarant">lening hypotheek 2 woning</bd-burg:OwnHouseDebtDescription>
+		<bd-burg:OwnHouseDebtInterestDeductible decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">1011</bd-burg:OwnHouseDebtInterestDeductible>
+		<bd-burg:OwnHouseDebtReportedPeriod decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">62</bd-burg:OwnHouseDebtReportedPeriod>
+	</bd-burg-tuple:OwnHouseDebtSpecification>
+	<bd-burg-tuple:OwnHousePrincipalResidenceIncomeSpecification>
+		<bd-burg:OwnHousePrincipalResidenceAddress contextRef="Context_Duration_Declarant">Straat 4</bd-burg:OwnHousePrincipalResidenceAddress>
+		<bd-burg:OwnHousePrincipalResidenceCityTown contextRef="Context_Duration_Declarant">Heerde</bd-burg:OwnHousePrincipalResidenceCityTown>
+		<bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">150000</bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawValue>
+		<bd-burg:OwnHousePrincipalResidencePercentageEntitlement decimals="INF" contextRef="Context_Duration_Declarant" unitRef="PURE">100</bd-burg:OwnHousePrincipalResidencePercentageEntitlement>
+		<bd-burg:OwnHousePrincipalResidencePeriodEnd contextRef="Context_Duration_Declarant">2016-06-30</bd-burg:OwnHousePrincipalResidencePeriodEnd>
+		<bd-burg:OwnHousePrincipalResidencePeriodStart contextRef="Context_Duration_Declarant">2016-01-01</bd-burg:OwnHousePrincipalResidencePeriodStart>
+		<bd-burg:OwnHousePrincipalResidencePostalCode contextRef="Context_Duration_Declarant">8181FE</bd-burg:OwnHousePrincipalResidencePostalCode>
+	</bd-burg-tuple:OwnHousePrincipalResidenceIncomeSpecification>
+	<bd-burg-tuple:OwnHousePrincipalResidenceIncomeSpecification>
+		<bd-burg:OwnHousePrincipalResidenceAddress contextRef="Context_Duration_Declarant">Straat 5</bd-burg:OwnHousePrincipalResidenceAddress>
+		<bd-burg:OwnHousePrincipalResidenceCityTown contextRef="Context_Duration_Declarant">Heerde</bd-burg:OwnHousePrincipalResidenceCityTown>
+		<bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawObjectNumber decimals="INF" contextRef="Context_Duration_Declarant" unitRef="PURE">10020203047</bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawObjectNumber>
+		<bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">100000</bd-burg:OwnHousePrincipalResidenceImmovablePropertyLawValue>
+		<bd-burg:OwnHousePrincipalResidencePercentageEntitlement decimals="INF" contextRef="Context_Duration_Declarant" unitRef="PURE">100</bd-burg:OwnHousePrincipalResidencePercentageEntitlement>
+		<bd-burg:OwnHousePrincipalResidencePeriodEnd contextRef="Context_Duration_Declarant">2016-12-31</bd-burg:OwnHousePrincipalResidencePeriodEnd>
+		<bd-burg:OwnHousePrincipalResidencePeriodStart contextRef="Context_Duration_Declarant">2016-07-01</bd-burg:OwnHousePrincipalResidencePeriodStart>
+		<bd-burg:OwnHousePrincipalResidencePostalCode contextRef="Context_Duration_Declarant">8181FG</bd-burg:OwnHousePrincipalResidencePostalCode>
+		<bd-burg:OwnHousePrincipalResidenceUsageSpecialSituationIndication contextRef="Context_Duration_Declarant">A</bd-burg:OwnHousePrincipalResidenceUsageSpecialSituationIndication>
+	</bd-burg-tuple:OwnHousePrincipalResidenceIncomeSpecification>
+	<bd-burg-tuple:PresentWorkSpecification>
+		<bd-burg:PresentWorkEmployerOrBenefitsAgencyName contextRef="Context_Duration_Declarant">loon</bd-burg:PresentWorkEmployerOrBenefitsAgencyName>
+		<bd-burg:PresentWorkWages decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">4000</bd-burg:PresentWorkWages>
+		<bd-burg:PresentWorkWithheldWageLevy decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">0</bd-burg:PresentWorkWithheldWageLevy>
+	</bd-burg-tuple:PresentWorkSpecification>
+	<bd-burg-tuple:RedemptionAnnuitiesCoveredByWagetaxSpecification>
+		<bd-burg:RedemptionAnnuitiesCoveredByWagetaxAnnuityRedemption decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">10000</bd-burg:RedemptionAnnuitiesCoveredByWagetaxAnnuityRedemption>
+	</bd-burg-tuple:RedemptionAnnuitiesCoveredByWagetaxSpecification>
+	<bd-burg-tuple:SharesSubstantialInterestSpecification>
+		<bd-burg:SharesSubstantialInterestAndSuchDescription contextRef="Context_Duration_Declarant">Aandelen</bd-burg:SharesSubstantialInterestAndSuchDescription>
+		<bd-burg:SharesSubstantialInterestCount contextRef="Context_Duration_Declarant">630</bd-burg:SharesSubstantialInterestCount>
+	</bd-burg-tuple:SharesSubstantialInterestSpecification>
+	<bd-burg-tuple:SharesSubstantialInterestSpecification>
+		<bd-burg:SharesSubstantialInterestAndSuchDescription contextRef="Context_Duration_Declarant">Aandelen C</bd-burg:SharesSubstantialInterestAndSuchDescription>
+		<bd-burg:SharesSubstantialInterestCount contextRef="Context_Duration_Declarant">590</bd-burg:SharesSubstantialInterestCount>
+	</bd-burg-tuple:SharesSubstantialInterestSpecification>
+	<bd-burg-tuple:StockSpecification>
+		<bd-burg:StockAccountNumber contextRef="Context_Duration_Declarant">930254331</bd-burg:StockAccountNumber>
+		<bd-burg:StockDescription contextRef="Context_Duration_Declarant">alle effecten</bd-burg:StockDescription>
+		<bd-burg:StockValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">299220</bd-burg:StockValue>
+		<bd-burg:StockValueUndividedValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">299220</bd-burg:StockValueUndividedValue>
+	</bd-burg-tuple:StockSpecification>
+	<bd-burg-tuple:SubstantialInterestRegularBenefitsDeductibleCostsSpecification>
+		<bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">140</bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsAmount>
+		<bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsDescription contextRef="Context_Duration_Declarant">kosten regulier voordeel ab</bd-burg:SubstantialInterestRegularBenefitsDeductibleCostsDescription>
+	</bd-burg-tuple:SubstantialInterestRegularBenefitsDeductibleCostsSpecification>
+	<bd-burg-tuple:SubstantialInterestRegularBenefitsSpecification>
+		<bd-burg:SubstantialInterestRegularBenefitsAmount decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">255000</bd-burg:SubstantialInterestRegularBenefitsAmount>
+		<bd-burg:SubstantialInterestRegularBenefitsDescription contextRef="Context_Duration_Declarant">regulier voordeel ab</bd-burg:SubstantialInterestRegularBenefitsDescription>
+	</bd-burg-tuple:SubstantialInterestRegularBenefitsSpecification>
+	<bd-burg-tuple:SubstantialInterestTransferPriceSpecification>
+		<bd-burg:SubstantialInterestTransferPriceDescription contextRef="Context_Duration_Declarant">overdrachtsprijs A</bd-burg:SubstantialInterestTransferPriceDescription>
+		<bd-burg:SubstantialInterestTransferPriceValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">22500</bd-burg:SubstantialInterestTransferPriceValue>
+	</bd-burg-tuple:SubstantialInterestTransferPriceSpecification>
+	<bd-burg-tuple:TrustCapitalSpecification>
+		<bd-burg:TrustCapitalCountry contextRef="Context_Duration_Declarant">CUW</bd-burg:TrustCapitalCountry>
+		<bd-burg:TrustCapitalName contextRef="Context_Duration_Declarant">Antilliaans fonds</bd-burg:TrustCapitalName>
+	</bd-burg-tuple:TrustCapitalSpecification>
+	<bd-burg-tuple:TrustCapitalSpecification>
+		<bd-burg:TrustCapitalCountry contextRef="Context_Duration_Declarant">LIE</bd-burg:TrustCapitalCountry>
+		<bd-burg:TrustCapitalName contextRef="Context_Duration_Declarant">Liechtensteins Fonds</bd-burg:TrustCapitalName>
+	</bd-burg-tuple:TrustCapitalSpecification>
+	<bd-burg-tuple:TrustCapitalTransactionSpecification>
+		<bd-burg:TrustCapitalTransactionDescription contextRef="Context_Duration_Declarant">lening verstrekt</bd-burg:TrustCapitalTransactionDescription>
+		<bd-burg:TrustCapitalTransactionValue decimals="INF" contextRef="Context_Duration_Declarant" unitRef="EUR">15000</bd-burg:TrustCapitalTransactionValue>
+	</bd-burg-tuple:TrustCapitalTransactionSpecification>
+	<frc-i:ReasonDelivery contextRef="context0">Nieuwe aanvraag</frc-i:ReasonDelivery>
+	
+	<venj-bw2-i:FinancialReportingPeriodCurrentStartDate contextRef="context0">2016-01-01</venj-bw2-i:FinancialReportingPeriodCurrentStartDate>
+	<venj-bw2-i:FinancialReportingPeriodCurrentEndDate contextRef="context0">2016-12-31</venj-bw2-i:FinancialReportingPeriodCurrentEndDate>
+	
+	<venj-bw2-i:FinancialReportingPeriodPreviousStartDate contextRef="context0">2015-01-01</venj-bw2-i:FinancialReportingPeriodPreviousStartDate>
+	<venj-bw2-i:FinancialReportingPeriodPreviousEndDate contextRef="context0">2015-12-31</venj-bw2-i:FinancialReportingPeriodPreviousEndDate>
+	
+	<rj-i:DocumentPresentationCurrency contextRef="context0">EUR</rj-i:DocumentPresentationCurrency>
+	<venj-bw2-i:ChamberOfCommerceRegistrationNumber contextRef="context0">87547471</venj-bw2-i:ChamberOfCommerceRegistrationNumber>
+	<venj-bw2-i:LegalEntityName contextRef="context0">Tulipse</venj-bw2-i:LegalEntityName>
+	<kvk-i:LegalSizeCriteriaClassification contextRef="context0">Klein</kvk-i:LegalSizeCriteriaClassification>
+	<rj-i:BusinessNames contextRef="context0">Tulipse</rj-i:BusinessNames>
+	<frc-i:DateEstablishmentLegalEntity contextRef="context0">1960-01-01</frc-i:DateEstablishmentLegalEntity>
+	<frc-i:NameIntermediary contextRef="context0">Tilk</frc-i:NameIntermediary>
+	<frc-i:DomicileIntermediary contextRef="context0">Rotterdam</frc-i:DomicileIntermediary>
+	<frc-i:QualificationIntermediary contextRef="context0">RA</frc-i:QualificationIntermediary>
+	<frc-i:NameCompiler contextRef="context0">Zisje</frc-i:NameCompiler>
+	<frc-i:TelephoneNumberIntermediary contextRef="context0">0609876543</frc-i:TelephoneNumberIntermediary>
+	<frc-i:EmailAddressIntermediary contextRef="context0">z@tadvies.nl</frc-i:EmailAddressIntermediary>
+	<frc-i:DestinationBank contextRef="context0">ING Bank</frc-i:DestinationBank>
+	<nl-cd:StreetNameNL contextRef="context31">Ganzenpad</nl-cd:StreetNameNL>
+	<nl-cd:HouseNumberNL contextRef="context31">13</nl-cd:HouseNumberNL>
+	<nl-cd:HouseNumberAddition contextRef="context31">A</nl-cd:HouseNumberAddition>
+	<nl-cd:POBoxNumber contextRef="context31">1234</nl-cd:POBoxNumber>
+	<nl-cd:PostalCodeNL contextRef="context31">1234AQ</nl-cd:PostalCodeNL>
+	<nl-cd:PlaceOfResidenceNL contextRef="context31">Rotterdam</nl-cd:PlaceOfResidenceNL>
+	<frc-i:BankName contextRef="context42">ING Bank</frc-i:BankName>
+	<kvk-t:ContactForDocumentPresentation>
+		<kvk-i:ContactType contextRef="context0">Intermediair</kvk-i:ContactType>
+		<nl-cd:FirstName contextRef="context0">Tilk</nl-cd:FirstName>
+		<nl-cd:FamilyName contextRef="context0">Sup</nl-cd:FamilyName>
+		<kvk-i:OrganisationName contextRef="context0">Tilk Advies</kvk-i:OrganisationName>
+		<nl-cd:TelephoneNumber contextRef="context0">0612345678</nl-cd:TelephoneNumber>
+		<nl-cd:EmailAddressFull contextRef="context0">ts@tsadvies.nl</nl-cd:EmailAddressFull>
+	</kvk-t:ContactForDocumentPresentation>
+</xbrli:xbrl>
