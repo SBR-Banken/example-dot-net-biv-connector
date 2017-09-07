@@ -137,7 +137,7 @@ namespace BivConnection
                 using (var reader = new StreamReader(stream))
                 {
                     var result = reader.ReadToEnd();
-                    return Encoding.ASCII.GetBytes(result);
+                    return Encoding.UTF8.GetBytes(result);
                 }
             }
         }
