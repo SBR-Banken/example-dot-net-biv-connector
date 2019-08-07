@@ -1,145 +1,95 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
-using System.ServiceModel;
-using System.ServiceModel.Channels;
-using System.ServiceModel.Security;
-using System.Text;
-using BivConnection.CSAanleverService;
+using System.Security;
+using BivConnection.CSStatusInformatieService;
 
 namespace BivConnection
 {
-    class Program
+    internal class Program
     {
-        private const string ContentsFilename = "frc-rpt-ihz-aangifte-2016.xbrl";
-        private const string ContentsPath = "BivConnection.Docs." + ContentsFilename;
-
-        // Not included in example.
-        private const string ClientCertPath = "BivConnection.Cert.Client.p12";
-        private const string ClientCertPassword = "";
-
-        // Not included in example
-        private const string ServerCertPath = "BivConnection.Cert.Server.crt";
-
-        private const string EndPointAddress = "https://bta-frcportaal.nl/biv-wus20v12/AanleverService";
-
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Creating request");
-            var request = CreateRequest();
+            var connector = new Program();
 
-            Console.WriteLine("Creating client");
-            var client = GetClient();
+            Console.WriteLine("Please enter your certificate password.");
+            var password = GetPassword();
 
-            Console.WriteLine("Sending request");
-            var timer = new Stopwatch();
-            timer.Start();
-            var response = client.aanleveren(request);
-            timer.Stop();
-            Console.WriteLine($"Received response in {timer.Elapsed}");
-
+            // do a synchronous delivery
+            connector.XbrlFileProcessor("BT13_IJRvolledig_2018.xbrl", password);
+            
+            // do an asynchronous delivery
+            connector.XbrlFileProcessor("VB-03_bd-rpt-ihz-aangifte-2018.xbrl", password);
+            Console.WriteLine($"\nPress any key to stop application...");            
             Console.ReadKey();
         }
 
-        private static aanleverenRequest CreateRequest()
+        private void XbrlFileProcessor(string fileName, SecureString password)
         {
-            return new aanleverenRequest
+            Console.WriteLine("\n===");
+            var aanleverService = new AanleverService();
+            var response = aanleverService.Aanleveren(fileName, password);
+            if (response == null) return;
+
+            var kenmerk = response.kenmerk;
+            Console.WriteLine("Succesfully sent request");
+            Console.WriteLine($"Identifier: {response.kenmerk}");
+            Console.WriteLine($"Statuscode: {response.statuscode}");
+            Console.WriteLine($"Statusmessage: {response.statusdetails}");                  
+           
+
+            var statusInformatieService = new StatusInformatieService();
+            var statusses = statusInformatieService.GetNieuweStatussenProces(kenmerk, password);
+            Console.WriteLine($"All new statusses for identifier: {kenmerk}");
+            if (statusses != null)
             {
-                aanleverRequest = new aanleverRequest
-                {
-                    aanleverkenmerk = Guid.NewGuid().ToString(),
-                    berichtsoort = "Testaanlevering",
-                    identiteitBelanghebbende = new identiteitType()
-                    {
-                        nummer = "12345678",
-                        type = "kvk"
-                    },
-                    rolBelanghebbende = "",
-                    berichtInhoud = new berichtInhoudType()
-                    {
-                        bestandsnaam = ContentsFilename,
-                        mimeType = "application/xml",
-                        inhoud = GetEmbeddedFile(ContentsPath)
-                    },
-                    autorisatieAdres = "http://localhost:8080/ode/processes/CSPService-OK",
-                }
-            };
-        }
-
-        private static AanleverService_V1_2 GetClient()
-        {
-            //Create binding element for security
-            var asymmetricSecurityBindingElement = (AsymmetricSecurityBindingElement)SecurityBindingElement.CreateMutualCertificateBindingElement(MessageSecurityVersion.
-                WSSecurity10WSTrust13WSSecureConversation13WSSecurityPolicy12BasicSecurityProfile10
-            );
-            asymmetricSecurityBindingElement.MessageSecurityVersion = MessageSecurityVersion.WSSecurity10WSTrust13WSSecureConversation13WSSecurityPolicy12BasicSecurityProfile10;
-            asymmetricSecurityBindingElement.EnableUnsecuredResponse = true;
-            asymmetricSecurityBindingElement.MessageProtectionOrder = MessageProtectionOrder.EncryptBeforeSign;
-            asymmetricSecurityBindingElement.IncludeTimestamp = true;
-            asymmetricSecurityBindingElement.DefaultAlgorithmSuite = SecurityAlgorithmSuite.TripleDesRsa15;
-
-            //Explicit accept secured answers from endpoint
-            asymmetricSecurityBindingElement.AllowSerializedSigningTokenOnReply = true;
-
-            //Create binding element for encoding
-            var encodingBindingElement = new TextMessageEncodingBindingElement(MessageVersion.Soap11WSAddressing10, Encoding.UTF8);            
+                PrintStatusResults(statusses);
+            }
             
-            //Create binding element for transport
-            var httpsTransportBindingElement = new HttpsTransportBindingElement
+            statusses = statusInformatieService.GetStatussenProces(kenmerk, password);
+            Console.WriteLine($"All statusses for identifier: {kenmerk}");
+            if (statusses != null)
             {
-                RequireClientCertificate = true,
-                AuthenticationScheme = System.Net.AuthenticationSchemes.Anonymous
-            };
-
-            var cbinding = new CustomBinding();
-            cbinding.Elements.Add(asymmetricSecurityBindingElement);
-            cbinding.Elements.Add(encodingBindingElement);
-            cbinding.Elements.Add(httpsTransportBindingElement);
-
-            var address = new EndpointAddress(EndPointAddress);
-            var factory = new ChannelFactory<AanleverService_V1_2>(cbinding, address);
-            var certClient = GetEmbeddedCertificate(ClientCertPath, ClientCertPassword);
-            var certService = GetEmbeddedCertificate(ServerCertPath);
-
-            //Explicit prevent check on chain of trust
-            factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
-            factory.Credentials.ClientCertificate.Certificate = certClient;
-            factory.Credentials.ServiceCertificate.DefaultCertificate = certService;
-
-            return factory.CreateChannel();
-        }
-
-        private static X509Certificate2 GetEmbeddedCertificate(string filename, string password = null)
-        {
-            var bytes = GetEmbeddedFile(filename);
-
-            // http://paulstovell.com/blog/x509certificate2 Tip #5
-            var tmpFileName = Path.Combine(Path.GetTempPath(), $"BivConnection-{Guid.NewGuid()}");
-            try
-            {
-                File.WriteAllBytes(tmpFileName, bytes);
-                return string.IsNullOrWhiteSpace(password) ? new X509Certificate2(tmpFileName) : new X509Certificate2(tmpFileName, password);
-            }
-            finally
-            {
-                File.Delete(tmpFileName);
+                PrintStatusResults(statusses);
             }
         }
 
-        private static byte[] GetEmbeddedFile(string path)
+        private static void PrintStatusResults(StatusResultaat[] statusses)
         {
-            var assembly = Assembly.GetExecutingAssembly();
-
-            using (var stream = assembly.GetManifestResourceStream(path))
+            foreach (var status in statusses)
             {
-                using (var reader = new StreamReader(stream))
+                Console.WriteLine(" ---");
+                Console.WriteLine($" Status details: {status.statusdetails}");
+                Console.WriteLine($" Timestamp status: {status.tijdstempelStatus}");
+                Console.WriteLine($" Statuscode: {status.statuscode}");
+                Console.WriteLine($" Status description: {status.statusomschrijving}");
+                if (status.statusFoutcode == null) continue;
+                Console.WriteLine($" Error code: {status.statusFoutcode.foutcode}");
+                Console.WriteLine($" Error description: {status.statusFoutcode.foutbeschrijving}");
+            }
+        }
+        
+        private static SecureString GetPassword()
+        {
+            var pwd = new SecureString();
+            while (true)
+            {
+                var i = Console.ReadKey(true);
+                if (i.Key == ConsoleKey.Enter)
                 {
-                    var result = reader.ReadToEnd();
-                    return Encoding.UTF8.GetBytes(result);
+                    break;
+                }
+                else if (i.Key == ConsoleKey.Backspace)
+                {
+                    if (pwd.Length <= 0) continue;
+                    pwd.RemoveAt(pwd.Length - 1);
+                    Console.Write("\b \b");
+                }
+                else if (i.KeyChar != '\u0000' ) // KeyChar == '\u0000' if the key pressed does not correspond to a printable character, e.g. F1, Pause-Break, etc
+                {
+                    pwd.AppendChar(i.KeyChar);
+                    Console.Write("*");
                 }
             }
+            return pwd;
         }
     }
 }
