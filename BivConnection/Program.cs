@@ -14,27 +14,27 @@ namespace BivConnection
             var password = GetPassword();
 
             // do a synchronous delivery
-            connector.XbrlFileProcessor("BT13_IJRvolledig_2018.xbrl", password);
-            
+            connector.XbrlFileProcessor("frc-rpt-vt-duurzaamheidsscore.xbrl", "12345678", password, "Test_SWL", "");
+
             // do an asynchronous delivery
-            connector.XbrlFileProcessor("VB-03_bd-rpt-ihz-aangifte-2018.xbrl", password);
+            connector.XbrlFileProcessor("VB-01_bd-rpt-ihz-aangifte-2019-masked.xbrl", "000000012", password, "Inkomstenbelasting","00000000123456780000");
             Console.WriteLine($"\nPress any key to stop application...");            
             Console.ReadKey();
         }
 
-        private void XbrlFileProcessor(string fileName, SecureString password)
+        private void XbrlFileProcessor(string fileName, String identifier, SecureString password, String messageType, String IdOntvanger)
         {
             Console.WriteLine("\n===");
             var aanleverService = new AanleverService();
-            var response = aanleverService.Aanleveren(fileName, password);
+            var response = aanleverService.Aanleveren(fileName, identifier, password, messageType, IdOntvanger);
             if (response == null) return;
 
             var kenmerk = response.kenmerk;
             Console.WriteLine("Succesfully sent request");
             Console.WriteLine($"Identifier: {response.kenmerk}");
             Console.WriteLine($"Statuscode: {response.statuscode}");
-            Console.WriteLine($"Statusmessage: {response.statusdetails}");                  
-           
+            Console.WriteLine($"Statusmessage: {response.statusdetails}");
+
 
             var statusInformatieService = new StatusInformatieService();
             var statusses = statusInformatieService.GetNieuweStatussenProces(kenmerk, password);

@@ -17,7 +17,8 @@ namespace BivConnection
             {
                 getNieuweStatussenProcesRequest = new getNieuweStatussenProcesRequest
                 {
-                    kenmerk = identifier
+                    kenmerk = identifier,
+                    autorisatieAdres = "http://geenausp.nl/"
                 }
             };
 
@@ -53,7 +54,8 @@ namespace BivConnection
             {
                 getStatussenProcesRequest = new getStatussenProcesRequest
                 {
-                    kenmerk = identifier
+                    kenmerk = identifier,
+                    autorisatieAdres = "http://geenausp.nl/"
                 }
             };
 

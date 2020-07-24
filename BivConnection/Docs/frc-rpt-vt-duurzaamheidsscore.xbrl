@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xml:lang="nl" xmlns:nl-cd="http://www.nltaxonomie.nl/nt14/sbr/20190320/dictionary/nl-common-data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:frc-vt-dim="https://www.sbrbanken.nl/vt14/frc/20200122/dictionary/frc-vt-axes" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:frc-vt-dm="https://www.sbrbanken.nl/vt14/frc/20200122/dictionary/frc-vt-domains" xmlns:frc-vt-i="https://www.sbrbanken.nl/vt14/frc/20200122/dictionary/frc-vt-data" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="https://www.sbrbanken.nl/vt14/frc/20200122/entrypoints/frc-rpt-vt-duurzaamheidsscore.xsd"/>
+  <xbrli:context id="context_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2019-01-01</xbrli:startDate>
+      <xbrli:endDate>2019-01-01</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="context_1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2020-01-01</xbrli:startDate>
+      <xbrli:endDate>2020-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:InstructorAxis">frc-vt-dm:InstructorMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2020-01-01</xbrli:startDate>
+      <xbrli:endDate>2020-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:OrganisationValuatorAxis">frc-vt-dm:ValuatorOrganisationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2020-01-01</xbrli:startDate>
+      <xbrli:endDate>2020-01-01</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="context_4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2020-01-01</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="context_5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2020-01-01</xbrli:startDate>
+      <xbrli:endDate>2020-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:VBOIDAxis">
+        <frc-vt-dm:VBOIDTypedMember>VBO1</frc-vt-dm:VBOIDTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:unit id="pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <nl-cd:DocumentCreationDate contextRef="context_0">2020-01-01</nl-cd:DocumentCreationDate>
+  <frc-vt-i:ReferenceDate contextRef="context_0">2019-12-31</frc-vt-i:ReferenceDate>
+  <frc-vt-i:ChamberOfCommerceRegistrationNumber contextRef="context_1">87654321</frc-vt-i:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:ShortName contextRef="context_1">Invest</frc-vt-i:ShortName>
+  <frc-vt-i:InstructorName contextRef="context_1">Investments BV</frc-vt-i:InstructorName>
+  <frc-vt-i:DepartmentName contextRef="context_1">Finance</frc-vt-i:DepartmentName>
+  <frc-vt-i:InstructorName contextRef="context_2">Taxaties BV</frc-vt-i:InstructorName>
+  <frc-vt-i:ShortName contextRef="context_2">Tax</frc-vt-i:ShortName>
+  <frc-vt-i:ChamberOfCommerceRegistrationNumber contextRef="context_2">24681012</frc-vt-i:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:DepartmentName contextRef="context_2">Finance &amp; Control</frc-vt-i:DepartmentName>
+  <nl-cd:FamilyName contextRef="context_1">Heerkens		</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_1">Jaap</nl-cd:FirstName>
+  <frc-vt-i:JobTitle contextRef="context_1">Hoofd administratie</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_1">02012345678</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_1">jaap.heerkens@investmentsbv.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:Salutation contextRef="context_1">Dhr.</frc-vt-i:Salutation>
+  <frc-vt-i:TitlesSuffix contextRef="context_1">MSc.</frc-vt-i:TitlesSuffix>
+  <frc-vt-i:ConstructionYear contextRef="context_3">1987</frc-vt-i:ConstructionYear>
+  <frc-vt-i:RenovationYear contextRef="context_3">2005</frc-vt-i:RenovationYear>
+  <nl-cd:FamilyName contextRef="context_2">Zoutenbier</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_2">Kai</nl-cd:FirstName>
+  <frc-vt-i:JobTitle contextRef="context_2">Valuator</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_2">0108765432</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_2">kai.zoutenbier@taxaties.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:ReferenceAllocatedBy contextRef="context_1">Geldgever</frc-vt-i:ReferenceAllocatedBy>
+  <frc-vt-i:Reference contextRef="context_1">REF-1234</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByDescription contextRef="context_1">Rabobank</frc-vt-i:ReferenceAllocatedByDescription>
+  <frc-vt-i:WalkScore contextRef="context_4">1</frc-vt-i:WalkScore>
+  <frc-vt-i:AchievedPointsAThreePointOne contextRef="context_4">0</frc-vt-i:AchievedPointsAThreePointOne>
+  <frc-vt-i:MeteredWaterUsagePerUser contextRef="context_4">Ja</frc-vt-i:MeteredWaterUsagePerUser>
+  <frc-vt-i:MainlyWaterSavingSanitary contextRef="context_4">Nee</frc-vt-i:MainlyWaterSavingSanitary>
+  <frc-vt-i:SeperateSewerNetworkForRainwater contextRef="context_4">Ja</frc-vt-i:SeperateSewerNetworkForRainwater>
+  <frc-vt-i:AchievedPointsBThreePointFive contextRef="context_4">70</frc-vt-i:AchievedPointsBThreePointFive>
+  <frc-vt-i:UsersCanOpenWindows contextRef="context_4">Ja</frc-vt-i:UsersCanOpenWindows>
+  <frc-vt-i:UsersCanAdjustTemperature contextRef="context_4">Ja</frc-vt-i:UsersCanAdjustTemperature>
+  <frc-vt-i:UsersCanAdjustMechanicalVentilation contextRef="context_4">Ja</frc-vt-i:UsersCanAdjustMechanicalVentilation>
+  <frc-vt-i:AchievedPointsBThreePointFour contextRef="context_4">100</frc-vt-i:AchievedPointsBThreePointFour>
+  <frc-vt-i:SolarPanels contextRef="context_4">Nee</frc-vt-i:SolarPanels>
+  <frc-vt-i:HeatAndColdStorage contextRef="context_4">Ja</frc-vt-i:HeatAndColdStorage>
+  <frc-vt-i:DistrictHeatingOrBoilerMoreThanFiveYearsOld contextRef="context_4">Ja</frc-vt-i:DistrictHeatingOrBoilerMoreThanFiveYearsOld>
+  <frc-vt-i:OtherNonFossilEnergyGeneration contextRef="context_4">Nee</frc-vt-i:OtherNonFossilEnergyGeneration>
+  <frc-vt-i:AchievedPointsBThreePointOne contextRef="context_4">50</frc-vt-i:AchievedPointsBThreePointOne>
+  <frc-vt-i:SpacePlanningAndInstallationsAreAdjustableForChangingDemand contextRef="context_4">Nee</frc-vt-i:SpacePlanningAndInstallationsAreAdjustableForChangingDemand>
+  <frc-vt-i:BuildingMainlyDemountableAndReusable contextRef="context_4">Nee</frc-vt-i:BuildingMainlyDemountableAndReusable>
+  <frc-vt-i:EmphaticallyAndMainlySustainableMaterialsUsed contextRef="context_4">Nee</frc-vt-i:EmphaticallyAndMainlySustainableMaterialsUsed>
+  <frc-vt-i:AchievedPointsBFourPointTwo contextRef="context_4">0</frc-vt-i:AchievedPointsBFourPointTwo>
+  <frc-vt-i:AchievedPointsBThree decimals="INF" contextRef="context_4" unitRef="pure">220</frc-vt-i:AchievedPointsBThree>
+  <frc-vt-i:WELLCertificate contextRef="context_4">5</frc-vt-i:WELLCertificate>
+  <frc-vt-i:AchievedPointsCOnePointOne contextRef="context_4">100</frc-vt-i:AchievedPointsCOnePointOne>
+  <frc-vt-i:AchievedPointsCOne decimals="INF" contextRef="context_4" unitRef="pure">100</frc-vt-i:AchievedPointsCOne>
+  <frc-vt-i:ValuationReport decimals="INF" contextRef="context_4" unitRef="pure">60</frc-vt-i:ValuationReport>
+  <frc-vt-i:ResultModel contextRef="context_4">4</frc-vt-i:ResultModel>
+  <frc-vt-i:ResultValuator contextRef="context_4">4</frc-vt-i:ResultValuator>
+  <frc-vt-i:AccessibilityBusTramSubwayATwoPointOne contextRef="context_4">2</frc-vt-i:AccessibilityBusTramSubwayATwoPointOne>
+  <frc-vt-i:AchievedPointsATwoPointOne contextRef="context_4">100</frc-vt-i:AchievedPointsATwoPointOne>
+  <frc-vt-i:AchievedPointsATwo decimals="INF" contextRef="context_4" unitRef="pure">100</frc-vt-i:AchievedPointsATwo>
+  <frc-vt-i:EnergyLabel contextRef="context_4">1</frc-vt-i:EnergyLabel>
+  <frc-vt-i:AchievedPointsBOnePointOne contextRef="context_4">0</frc-vt-i:AchievedPointsBOnePointOne>
+  <frc-vt-i:PurposeAndExpansionPossibilities contextRef="context_4">1</frc-vt-i:PurposeAndExpansionPossibilities>
+  <frc-vt-i:AchievedPointsBFourPointOne contextRef="context_4">0</frc-vt-i:AchievedPointsBFourPointOne>
+  <frc-vt-i:UrbanityBasedOnEnvironmentalAddressesDensity contextRef="context_4">1</frc-vt-i:UrbanityBasedOnEnvironmentalAddressesDensity>
+  <frc-vt-i:AchievedPointsAOnePointTwo contextRef="context_4">0</frc-vt-i:AchievedPointsAOnePointTwo>
+  <nl-cd:DescriptionLocationNL contextRef="context_5">West-Nederland</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_5">Donaustraat</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_5">12</nl-cd:HouseNumberNL>
+  <nl-cd:PostalCodeNL contextRef="context_5">3021AP</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_5">Nijmegen</nl-cd:PlaceOfResidenceNL>
+  </xbrli:xbrl>

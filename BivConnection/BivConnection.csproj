@@ -72,8 +72,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EmbeddedResource Include="Cert\Client.p12" />
-    <EmbeddedResource Include="Cert\Server.crt" />
     <None Include="Service References\CSAanleverService\Aanleverservice_WUS20v12_prod1.wsdl" />
     <None Include="Service References\CSAanleverService\BivConnection.CSAanleverService.aanleverenResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -139,9 +137,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Docs\BT13_IJRvolledig_2018.xbrl" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\CSStatusInformatieService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +149,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Docs\VB-03_bd-rpt-ihz-aangifte-2018.xbrl" />
+    <EmbeddedResource Include="Cert\Server.crt" />
+    <EmbeddedResource Include="Cert\Client.p12" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Docs\frc-rpt-vt-duurzaamheidsscore.xbrl" />
+    <EmbeddedResource Include="Docs\VB-01_bd-rpt-ihz-aangifte-2019-masked.xbrl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
