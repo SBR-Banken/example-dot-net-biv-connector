@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -153,8 +154,12 @@
     <EmbeddedResource Include="Cert\Client.p12" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Docs\frc-rpt-vt-duurzaamheidsscore.xbrl" />
-    <EmbeddedResource Include="Docs\VB-01_bd-rpt-ihz-aangifte-2019-masked.xbrl" />
+    <EmbeddedResource Include="Docs\frc-rpt-nt-inrichtingsjaarrekening-2021.xbrl" />
+    <EmbeddedResource Include="Docs\frc-rpt-vt-taxatierapport.xbrl" />
+    <EmbeddedResource Include="Docs\nba-controleverklaring-goedkeurend-NL.xbrl" />
+    <EmbeddedResource Include="Docs\signature-about-document.xml" />
+    <EmbeddedResource Include="Docs\signature-about-signature.xml" />
+    <EmbeddedResource Include="Docs\signature.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

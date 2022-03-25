@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xml:lang="nl" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:frc-vt-dm="https://www.sbrnexus.nl/vt15/frc/20210421/dictionary/frc-vt-domains" xmlns:frc-vt-i="https://www.sbrnexus.nl/vt15/frc/20210421/dictionary/frc-vt-data" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:frc-vt-dim="https://www.sbrnexus.nl/vt15/frc/20210421/dictionary/frc-vt-axes" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:nl-cd="http://www.nltaxonomie.nl/nt15/sbr/20200301/dictionary/nl-common-data">
+  <link:schemaRef xlink:type="simple" xlink:href="https://www.sbrnexus.nl/vt15/frc/20210421/entrypoints/frc-rpt-vt-taxatierapport.xsd"/>
+  <xbrli:context id="context_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ClientAxis">frc-vt-dm:ClientMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ContractorAxis">frc-vt-dm:ContractorMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:AssignmentInformationAxis">frc-vt-dm:AssignmentInformationMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:BAGOTHERIDAxis">
+				<frc-vt-dm:BAGOTHERIDTypedMember>BAGOTHER-1</frc-vt-dm:BAGOTHERIDTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:BAGPANDIDAxis">
+				<frc-vt-dm:BAGPANDIDTypedMember>BAGPAND-1</frc-vt-dm:BAGPANDIDTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+				<frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+				<frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+				<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+				<frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+				<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+				<frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+				<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_13">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LocalTaxNumberAxis">
+				<frc-vt-dm:LocalTaxNumberTypedMember>WOZ 1</frc-vt-dm:LocalTaxNumberTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+				<frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_15">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ClassesOfEntityInformationRealEstateAxis">frc-vt-dm:EntityInformationRealEstateMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_16">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuatorAxis">
+				<frc-vt-dm:ValuatorTypedMember>Taxateur 1</frc-vt-dm:ValuatorTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuatorRegistersAxis">
+				<frc-vt-dm:ValuatorRegistersTypedMember>NRVT</frc-vt-dm:ValuatorRegistersTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuatorAxis">
+				<frc-vt-dm:ValuatorTypedMember>Taxateur 1</frc-vt-dm:ValuatorTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="context_19">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:TypeOfRealEstateAxis">frc-vt-dm:CommercialPartRealEstateMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_20">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:TypeOfRealEstateAxis">frc-vt-dm:CommercialPartRealEstateMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_21">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuationValueCommercialPartRealEstateAxis">
+				<frc-vt-dm:ValuationValueCommercialPartRealEstateTypedMember>Waarde 1</frc-vt-dm:ValuationValueCommercialPartRealEstateTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_22">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:YearAxis">
+				<frc-vt-dm:YearTypedMember>Jaar 1</frc-vt-dm:YearTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_24">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:GroundLeaseAgreementAxis">
+				<frc-vt-dm:GroundLeaseAgreementTypedMember>Erfpachtcontract 1</frc-vt-dm:GroundLeaseAgreementTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+				<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_26">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractAxis">
+				<frc-vt-dm:LeaseContractTypedMember>Contract 1</frc-vt-dm:LeaseContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_27">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:IndexationAxis">
+				<frc-vt-dm:IndexationTypedMember>Index 1</frc-vt-dm:IndexationTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:ContractAxis">
+				<frc-vt-dm:ContractTypedMember>Contract 1</frc-vt-dm:ContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_28">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractAxis">
+				<frc-vt-dm:LeaseContractTypedMember>Contract 1</frc-vt-dm:LeaseContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_29">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractItemAxis">
+				<frc-vt-dm:LeaseContractItemTypedMember>Contractregel 1</frc-vt-dm:LeaseContractItemTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractAxis">
+				<frc-vt-dm:LeaseContractTypedMember>Contract 1</frc-vt-dm:LeaseContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_31">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractAxis">
+				<frc-vt-dm:LeaseContractTypedMember>Contract</frc-vt-dm:LeaseContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_32">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseContractAxis">
+				<frc-vt-dm:LeaseContractTypedMember>Contract</frc-vt-dm:LeaseContractTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_33">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseReferenceCommercialAxis">
+				<frc-vt-dm:LeaseReferenceCommercialTypedMember>Huurreferentie 1</frc-vt-dm:LeaseReferenceCommercialTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_34">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:LeaseReferenceCommercialAxis">
+				<frc-vt-dm:LeaseReferenceCommercialTypedMember>Huurreferentie 1</frc-vt-dm:LeaseReferenceCommercialTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_35">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="context_36">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:RealEstateMasterObjectAxis">frc-vt-dm:RealEstateMasterObjectMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_37">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:RealEstatePropertyTaxAxis">frc-vt-dm:RealEstatePropertyTaxMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_38">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:RealEstatePropertyTaxAxis">frc-vt-dm:RealEstatePropertyTaxMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_39">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:SaleInvestmentReferencesCommercial">
+				<frc-vt-dm:SaleInvestmentReferencesCommercialTypedMember>Koopreferentie 1</frc-vt-dm:SaleInvestmentReferencesCommercialTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_40">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:SaleInvestmentReferencesCommercial">
+				<frc-vt-dm:SaleInvestmentReferencesCommercialTypedMember>Koopreferentie 1</frc-vt-dm:SaleInvestmentReferencesCommercialTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_42">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:SalesInformationAxis">
+				<frc-vt-dm:SalesInformationTypedMember>Verkoop 1</frc-vt-dm:SalesInformationTypedMember>
+			</xbrldi:typedMember>
+			<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+				<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_43">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuationInspectionAxis">
+				<frc-vt-dm:ValuationInspectionTypedMember>Inspectie 1</frc-vt-dm:ValuationInspectionTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_44">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:explicitMember dimension="frc-vt-dim:ValuationInformationAxis">frc-vt-dm:ValuationInformationMember</xbrldi:explicitMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_45">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:PreviousValuationAxis">
+				<frc-vt-dm:PreviousValuationTypedMember>Eerdere taxatie 1</frc-vt-dm:PreviousValuationTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_46">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:ValuationAssumptionsIndicesYearAxis">
+				<frc-vt-dm:ValuationAssumptionsIndicesYearTypedMember>Jaar 1</frc-vt-dm:ValuationAssumptionsIndicesYearTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_47">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2021-01-07</xbrli:startDate>
+      <xbrli:endDate>2021-01-07</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:UnitAxis">
+				<frc-vt-dm:UnitTypedMember>Ruimte 1</frc-vt-dm:UnitTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_48">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+			<xbrldi:typedMember dimension="frc-vt-dim:UnitAxis">
+				<frc-vt-dm:UnitTypedMember>Ruimte 1</frc-vt-dm:UnitTypedMember>
+			</xbrldi:typedMember>
+		</xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">12345678</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2021-01-07</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:ValuationValueResidentialRealEstateAxis">
+        <frc-vt-dm:ValuationValueResidentialRealEstateTypedMember>Contract 1</frc-vt-dm:ValuationValueResidentialRealEstateTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:unit id="sqm">
+    <xbrli:measure>utr:sqm</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="eur">
+    <xbrli:measure>iso4217:EUR</xbrli:measure>
+  </xbrli:unit>
+  <nl-cd:DocumentCreationDate contextRef="context_0">2021-01-07</nl-cd:DocumentCreationDate>
+  <frc-vt-i:ReportingCurrency contextRef="context_0">EUR</frc-vt-i:ReportingCurrency>
+  <frc-vt-i:DocumentReportingDate contextRef="context_1">2021-01-07</frc-vt-i:DocumentReportingDate>
+  <frc-vt-i:Reference contextRef="context_2">10</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByPartyType contextRef="context_2">Beheerder</frc-vt-i:ReferenceAllocatedByPartyType>
+  <frc-vt-i:ReferenceAllocatedByPartyReferenceDescription contextRef="context_2">Toelichting</frc-vt-i:ReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:ReferenceDescription contextRef="context_2">Toelichting</frc-vt-i:ReferenceDescription>
+  <frc-vt-i:OrganisationName contextRef="context_2">Test BV</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_2">Test</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_2">87654321</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:DepartmentName contextRef="context_2">Compliance</frc-vt-i:DepartmentName>
+  <nl-cd:FamilyName contextRef="context_2">Vries</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_2">Jan</nl-cd:FirstName>
+  <nl-cd:Prefix contextRef="context_2">de</nl-cd:Prefix>
+  <frc-vt-i:TitlesPrefix contextRef="context_2">drs</frc-vt-i:TitlesPrefix>
+  <frc-vt-i:JobTitle contextRef="context_2">Beoordelaar</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_2">012345678</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_2">test@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:Reference contextRef="context_3">11</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByPartyType contextRef="context_3">Eigenaar</frc-vt-i:ReferenceAllocatedByPartyType>
+  <frc-vt-i:ReferenceAllocatedByPartyReferenceDescription contextRef="context_3">Toelichting</frc-vt-i:ReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:ReferenceDescription contextRef="context_3">Toelichting</frc-vt-i:ReferenceDescription>
+  <frc-vt-i:OrganisationName contextRef="context_3">Vastgoed BV</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_3">Vastgoed</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_3">98765432</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:DepartmentName contextRef="context_3">Beheer</frc-vt-i:DepartmentName>
+  <nl-cd:FamilyName contextRef="context_3">Engelen</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_3">Toos</nl-cd:FirstName>
+  <nl-cd:Prefix contextRef="context_3">van</nl-cd:Prefix>
+  <frc-vt-i:TitlesPrefix contextRef="context_3">mr.</frc-vt-i:TitlesPrefix>
+  <frc-vt-i:JobTitle contextRef="context_3">Beheerder</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_3">0123456789</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_3">vastgoed@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:AssignmentDate contextRef="context_4">2020-12-21</frc-vt-i:AssignmentDate>
+  <frc-vt-i:TypeOfInstructor contextRef="context_4">10</frc-vt-i:TypeOfInstructor>
+  <frc-vt-i:AssignmentTerms contextRef="context_4">Tekst</frc-vt-i:AssignmentTerms>
+  <frc-vt-i:AssignmentTermsBy contextRef="context_4">Tekst</frc-vt-i:AssignmentTermsBy>
+  <frc-vt-i:SpecialPrinciples contextRef="context_4">Tekst</frc-vt-i:SpecialPrinciples>
+  <frc-vt-i:ReportingDate contextRef="context_4">2021-01-07</frc-vt-i:ReportingDate>
+  <frc-vt-i:ValuationType contextRef="context_4">20</frc-vt-i:ValuationType>
+  <frc-vt-i:ValuationPurpose contextRef="context_4">10</frc-vt-i:ValuationPurpose>
+  <frc-vt-i:PurposeExplanation contextRef="context_4">Toelichting</frc-vt-i:PurposeExplanation>
+  <frc-vt-i:BAGOTHERID contextRef="context_5">BAGOTHER-1</frc-vt-i:BAGOTHERID>
+  <frc-vt-i:BAGPANDID contextRef="context_6">BAGPAND-1</frc-vt-i:BAGPANDID>
+  <frc-vt-i:BAGVBOID contextRef="context_7">BAGVBO-1</frc-vt-i:BAGVBOID>
+  <nl-cd:DescriptionLocationNL contextRef="context_8">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_8">Straatweg</nl-cd:StreetNameNL>
+  <frc-vt-i:StreetNameNLFull contextRef="context_8">Straatweg</frc-vt-i:StreetNameNLFull> 
+  <nl-cd:HouseNumberNL contextRef="context_8">1</nl-cd:HouseNumberNL>
+  <nl-cd:HouseNumberAddition contextRef="context_8">a</nl-cd:HouseNumberAddition>
+  <nl-cd:PostalCodeNL contextRef="context_8">1111AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_8">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <frc-vt-i:LandRegister contextRef="context_10">Amsterdam</frc-vt-i:LandRegister>
+  <frc-vt-i:LandRegisterCode contextRef="context_10">111</frc-vt-i:LandRegisterCode>
+  <frc-vt-i:LandRegisterSection contextRef="context_10">222</frc-vt-i:LandRegisterSection>
+  <frc-vt-i:LandRegisterNumber contextRef="context_10">333</frc-vt-i:LandRegisterNumber>
+  <frc-vt-i:LandRegisterIndexNumberApartmentRight contextRef="context_10">44</frc-vt-i:LandRegisterIndexNumberApartmentRight>
+  <frc-vt-i:GroundInterest contextRef="context_10">1</frc-vt-i:GroundInterest>
+  <frc-vt-i:LandRegisterComments contextRef="context_10">Geen</frc-vt-i:LandRegisterComments>
+  <frc-vt-i:LandRegisterArea decimals="INF" contextRef="context_10" unitRef="sqm">500</frc-vt-i:LandRegisterArea>
+  <frc-vt-i:RightOfResidence contextRef="context_10">1</frc-vt-i:RightOfResidence>
+  <frc-vt-i:OwnerAccordingToLandRegister contextRef="context_11">R. van Dijk</frc-vt-i:OwnerAccordingToLandRegister>
+  <frc-vt-i:OwnershipPercentage decimals="INF" contextRef="context_11" unitRef="pure">1</frc-vt-i:OwnershipPercentage>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_12">45678789</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:ValueEstimation contextRef="context_13">1</frc-vt-i:ValueEstimation>
+  <frc-vt-i:Value decimals="INF" contextRef="context_13" unitRef="eur">100000</frc-vt-i:Value>
+  <frc-vt-i:ValuationDateLocalTax contextRef="context_13">2020-12-31</frc-vt-i:ValuationDateLocalTax>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_15">11111111</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:LegalEntityName contextRef="context_15">Waardering BV</nl-cd:LegalEntityName>
+  <frc-vt-i:LegalEntityLegalForm contextRef="context_15">Besloten vennootschap met beperkte aansprakelijkheid</frc-vt-i:LegalEntityLegalForm>
+  <frc-vt-i:BusinessNames contextRef="context_15">Waardering</frc-vt-i:BusinessNames>
+  <frc-vt-i:LegalEntityRegisteredOffice contextRef="context_15">Amsterdam</frc-vt-i:LegalEntityRegisteredOffice>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_15">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <nl-cd:CountryCodeISO contextRef="context_15">NLD</nl-cd:CountryCodeISO>
+  <nl-cd:DescriptionLocationNL contextRef="context_15">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_15">Straatweg</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_15">111</nl-cd:HouseNumberNL>
+  <nl-cd:HouseNumberAddition contextRef="context_15">a</nl-cd:HouseNumberAddition>
+  <nl-cd:PostalCodeNL contextRef="context_15">1111BB</nl-cd:PostalCodeNL>
+  <nl-cd:FamilyName contextRef="context_16">Pietersen</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_16">Jan</nl-cd:FirstName>
+  <frc-vt-i:JobTitle contextRef="context_16">Taxateur</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_16">0201111111</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_16">jan@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:Specialisation contextRef="context_16">Zakelijk vastgoed</frc-vt-i:Specialisation>
+  <frc-vt-i:NRVTNumber contextRef="context_17">12345</frc-vt-i:NRVTNumber>
+  <frc-vt-i:NRVTCommercialRealEstate contextRef="context_17">1</frc-vt-i:NRVTCommercialRealEstate>
+  <frc-vt-i:NRVTWholesaleRealEstate contextRef="context_17">1</frc-vt-i:NRVTWholesaleRealEstate>
+  <frc-vt-i:NRVTRuralAndAgriculturalRealEstate contextRef="context_17">0</frc-vt-i:NRVTRuralAndAgriculturalRealEstate>
+  <frc-vt-i:NRVTResidence contextRef="context_17">0</frc-vt-i:NRVTResidence>
+  <frc-vt-i:NRVTTaxValue contextRef="context_17">1</frc-vt-i:NRVTTaxValue>
+  <frc-vt-i:CharteredValuationSurveyor contextRef="context_17">0</frc-vt-i:CharteredValuationSurveyor>
+  <frc-vt-i:NameBranchAssociation contextRef="context_18">NVM</frc-vt-i:NameBranchAssociation>
+  <frc-vt-i:RegistrationNumber contextRef="context_18">456788</frc-vt-i:RegistrationNumber>
+  <frc-vt-i:MarketTechnicalUpdateMarketValueAfterTransferCost decimals="INF" contextRef="context_19" unitRef="eur">100000</frc-vt-i:MarketTechnicalUpdateMarketValueAfterTransferCost>
+  <frc-vt-i:MarketTechnicalUpdateMarketRent decimals="INF" contextRef="context_19" unitRef="eur">100000</frc-vt-i:MarketTechnicalUpdateMarketRent>
+  <frc-vt-i:MarketTechnicalUpdateAverageVacancyMonths decimals="INF" contextRef="context_19" unitRef="pure">5</frc-vt-i:MarketTechnicalUpdateAverageVacancyMonths>
+  <frc-vt-i:MarketTechnicalUpdateNetInitialYieldAfterCorrectionMarketRentBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:MarketTechnicalUpdateNetInitialYieldAfterCorrectionMarketRentBeforeTransferCost>
+  <frc-vt-i:QualificationRealEstateObject contextRef="context_19">1</frc-vt-i:QualificationRealEstateObject>
+  <frc-vt-i:QualificationLocation contextRef="context_19">1</frc-vt-i:QualificationLocation>
+  <frc-vt-i:QualificationProperty contextRef="context_19">2</frc-vt-i:QualificationProperty>
+  <frc-vt-i:QualificationLegalStatus contextRef="context_19">2</frc-vt-i:QualificationLegalStatus>
+  <frc-vt-i:QualificationUsageSituation contextRef="context_19">2</frc-vt-i:QualificationUsageSituation>
+  <frc-vt-i:QualificationMarket contextRef="context_19">3</frc-vt-i:QualificationMarket>
+  <frc-vt-i:QualificationMarketabilityRent contextRef="context_19">4</frc-vt-i:QualificationMarketabilityRent>
+  <frc-vt-i:QualificationMarketabilitySale contextRef="context_19">4</frc-vt-i:QualificationMarketabilitySale>
+  <frc-vt-i:ActualUse contextRef="context_20">20</frc-vt-i:ActualUse>
+  <frc-vt-i:ConstructionYear contextRef="context_19">1950</frc-vt-i:ConstructionYear>
+  <frc-vt-i:Image contextRef="context_19">&lt;img width="500" height="310" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAE2CAYAAACX9mA1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAKfFJREFUeNrs3Qm8FXX9//FBQUhMQhRIwRRzQa00yq1STARFpZLMRHFLSVMUEBNBXBBzAUEDcWMRt8RARHJBUcy0NBYJU4zcSkKSFBcEt5/nP+95/IfHuTOfOWe+c+ZczuW+no/HeaDn3jN3zpw58/kun/l8mxQKhbGe5+3lAQCABqvp/w/mXTkUAAA0XJtwCAAAIKADAAACOgAAIKADAAACOgAABHQAAEBABwAABHQAAEBABwCAgA4AAAjoAACAgA4AAAjoAAAQ0AEAAAEdAAAQ0AEAAAEdAAACOgAAIKADAAACOgAAIKADAEBABwAABHQAAEBABwAABHQAAAjoAACAgA4AAAjoAACAgA4AAAEdAAAQ0AEAAAEdAAAQ0AEAIKADAAACOgAAIKADAAACOgAABHQAAEBABwAABHQAAEBABwCAgA4AAAjoAACAgA4AAAjoAACAgA4AAAEdAAAQ0AEAAAEdAAAQ0AEAIKADAAACOgAAIKADAAACOgAABHQAAEBABwAABHQAAEBABwCAgA4AAAjoAACAgA4AAAjoAAAQ0AEAAAEdAAAQ0AEAAAEdAAACOgAAIKADAAACOgAAIKADAEBABwAABHQAAEBABwAABHQAAAjoAACAgA4AAAjoAACAgA4AAAEdAAAQ0AEAAAEdAAAQ0AEAIKADAAACOgAAIKADAAACOgAABHQOAQAABHQAAEBABwAABHQAAEBABwCAgA4AAAjoAACAgA4AAAjoAAAQ0AEAAAEdAAAQ0AEAAAEdAAACOgAAIKADAAACOgAAIKADAEBABwAABHQAAEBABwAABHQAAAjoAACAgA4AAAjoAACAgA4AAAEdAAAQ0AEAAAEdAAAQ0AEAIKADAAACOgAAIKADAAACOgAABHQAAEBABwAABHQAAEBABwCAgA4AAAjoAACAgA4AAAjoAAA0bk05BBu/d99913v88ce9119/3XvttdfsE6FpU2/8+PGJ2zjjjDNiz/Xv39/bY489OMA1aNy4cd6LL75Y57nu3bt7Rx99dE3sn3U+nXXWWd43vvENp+3cdttt3rPPPhv8d9u2bb0+ffp4u+22GycAGqUmhUJhnv9vVw7FxmnGjBne5MmTvb/97W/ef//7X+/zzz83f69Nmzbe//73P/Nnel379u1jzytg7L777hzkGqTPS59bsQkTJnhnnnnmBt83NSw7deoUe/6NN97wvva1r6XezsiRI73rr7++znl7wAEHeH/84x+DBipADx25WL16deLPWrduXW/B/Nxzz/X+85//lP3d3r17J/5swYIFsee22GILb9ddd+WDrkEK5Fbj7LDDDquJ/XvmmWdiz7Vr184pmP/rX//yRowY4X322Wd1nv/zn//svfDCC97ee+/NibARXjvl//7v/7ytt96aA0VArx+33nqrN2vWrMSf33///VXvQeiCN2DAgFTBXPbcc8/En6l3H7Xvvvt6m266KR92DVIDTBe9YltuuaW3/fbb18T+LVmyJPbcd77zHadtPPTQQ7FgHkoahUJtW758uXf55ZeXvWYdeeSR5pQNCOi5W7lypTds2DBv1apVib+zbNmyqg9VX3jhhcEXJO3IwC677OJ0Ad5vv/34sGuU1QBTrkOtNMCs/fvWt77ltI1///vf5vMtWrRgGqgBmjNnjjdq1Kgg16ecXr16ccAI6PVDc3qlgrksXbq0qhedf/7zn960adPqPKeEoYkTJya+Zp999kn8meYko1yTl7Bhe8B77bVXzezf/PnzY89985vfdNrGV77yFfP5bt26eS1btuQkaEBuueUWb/To0cF1K41DDz2Ug0ZAr763337bu/nmmzP3LvJyzz33eF988UWd5zSkedRRR2V6Txp1iDrooIP4wGuU1QBTslgt0FSQNUfqej79+Mc/Dhqtzz///Prnvv/97weJcmgYPv744/WJjWvWrEn1mi9/+cs1M3VEQN/I6eQsl9ARXtSqSfOLefXQrIQ49fatrHfURqPSaoB973vfq4n9+9Of/hR7bptttnE+n5SQqZ6dAvq6deuC6SQlwpXKBUHt0LTjlVdeGdx2aBk4cKD36KOPxm691OdL7g4Bveo0jB4d0m7WrFnQa5g3b169BXQlBFlzlFmHyK1tuSYwof5YDbBa6tX8/e9/jz134IEHZtqWzkPOxYbnscceCzo/Tz31VOxnmkq54oorvF/96lfmrY2uuRaNDZXicjJ8+PCgp1Ds+OOPD4qvpLmo5UWFY6L7IV27ds20PWs+li9V7bIaYLXUq3n66adjz5Fg2XjoDiAVELKCuUYRp06d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HM0dEOs5V1axCw0hpqmCpcZUdIU3BZxKq+uF7rvvvuAe3jSsgi+6O6HSABgaP368GaSTWElerndKWDUAohXLXOg7pM/bOm+yBFArR0TfH2sZXtdjlWU7xawhfNdCKOqRK4EtDOaawrn11lsbVf1y65zP0jACAT2gZBmrXKLuC3WZj6ykh57U4y4lz/m7pFayVefbxcyZM8358wEDBqTqcejiaPXqrFwHVxo10H6cdtpp3pQpU8r+vi7W0dKwWmTFmit2pb+val5aAS6ppnUxDfdGh2Aly/3PVuPOWs4zTTC/+OKLg8/bGtnRd8k1gFq3ZaoYkCuryl+W7eQ5QqLpBGW0FxdI0jlWybKpDREJcTkrFArzCo3YoYceqonzOg+/d15YuXJlVf7eokWLYn9PD79lnnobH330UcE/4WPb8C+AmfbpwgsvNPdpk002Kcybl+308BsJhY4dO8a2ueuuuxY+/PDD1NsZNWpUbBvNmjUr+BfpzJ/B5MmTC7vsssv67TVv3rxw0003FdatW1fydd27d4/tS+fOnQt+YM+0HzoOI0aMCP5+uD3tl99zK/m6OXPmxPajdevWzn9f++03UmLbOvXUU5228+mnnxaGDBkSvLZFixYFv2ER22bfvn2d98/vqca2c+ONNzpvp/izrmQ7xfwefmybkyZNSv36l19+Ofb6ffbZp9Fdf9u2bRs7DqeffnoB2TTqgP7II4+YgUwXp2p57733zL/p9xZTb2PBggWx12+66aaFDz74INM+9ezZ0wwQ+rdLly6FF154wWl7jz76qHkR1cXe79E6bWv58uWFJk2axLa19957O+/XsmXLCiNHjgz2I7q9bbbZprBmzZqSr7///vvNz87v5RdWrVrltC/z588v9OvXz9xe7969S772mmuuib3myCOPzPTZd+vWzWww6buRxptvvlmnQdi/f//CIYccEtvm1KlTnfbr888/L/g9+th2Fi9e7LSdvBu/8s4775ifm46Fy3ck+vpWrVoVpkyZ4rSdhmz16tXmcZw+fTqROaNGO66hIS8NuUbpvmLr+bxo+8pOjdYAtzJmS00T5DGkGbIS4jTlcNVVV3kLFy4MlhY955xzgrk9lVC1aC5Z84qarxw9erSZE6BhZa2t7kKV17RoSbSYjJYfTbtfSorS7995553BGvdRyhRWZa1yNa979OgR3OcfLYQx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YBX5GvPYY4+ZxSFUNCJKhUlcVmQCsGFoFT7LkCFDgroPKhKUZeEiNfRVpEb3oI8YMSJY9a/YtttuG6x+iMaB+9BrjKpPrVixItXvKklOq5ABqG26L1z5LtZtp23atAkKRqkyngohlWukqxiUsuaXL18eNPS1JLBVSU+Fba699tqKCtaAgI6M1LpWBS1rac6oU045xZs8eTIHDWggtOyq5rKjJYqLqaxuuTXUtfSqeuZaVjjJrrvu6g0aNMjr168fB74RYci9hui2lnLBXPPmWi973LhxHDCgAdG63arkptKvmj+3aC0APbLSve1a66B///511mQAAR31bMmSJYnzaB06dAjKvmqubfDgwWY9egC1bfjw4UGSmhrkr776alCOtVSPPY2wxr5qUvTq1YuM9kaMIfcaosUarFvTZK+99gouBFpdCEDD9+yzz3pz5swJRuY0fB4mw2qOXIvaWDS/rsVIlDWvglLKuQmvDWlWsAMBHQBQRQro4Z0smiO3luAVza+HS/G2b98+WHYVIKADALARobAMAAAEdAAAQEAHAAAEdAAAQEAHAICADgAACOgAAICADgAACOgAABDQAQAAAR0AABDQAQAAAR0AAAI6AAAgoAMAAAI6AAAgoAMAQEAHAAAEdAAAQEAHAAAEdAAACOgAAICADgAACOgAAICADgAAAR0AABDQAQAAAR0AABDQAQAgoAMAAAI6AAAgoAMAAAI6AAAEdAAAQEAHAAAEdAAAQEAHAICADgAACOgAAICADgAACOgAABDQAQAAAR0AABDQAQAAAR0AABDQAQAgoAMAAAI6AAAgoAMAAAI6AAAEdAAAQEAHAAAEdAAAQEAHAICADgAACOgAAICADgAACOgAABDQAQAAAR0AABDQAQAAAR0AAAI6AAAgoAMAAAI6AAAgoAMAQEAHAAAEdAAAQEAHAAAEdAAACOgAAICADgAACOgAAICADgAAAR0AABDQAQAAAR0AABDQAQAgoAMAAAI6AAAgoAMAAAI6AAAEdAAAQEAHAAAEdAAAQEAHAAAEdAAACOgAAICADgAACOgAAICADgAAAR0AABDQAQAAAR0AABDQAQAgoAMAAAI6AAAgoAMAAAI6AAAEdAAAQEAHAAAEdAAAQEAHAICADgAACOgAAICADgAACOgAABDQAQAAAR0AABDQAQAAAR0AAAI6AAAgoAMAAAI6AABI7/8JMABy3UkvrKV8hQAAAABJRU5ErkJggg=="/&gt;</frc-vt-i:Image>
+  <frc-vt-i:BREEAMCertificate contextRef="context_19">1</frc-vt-i:BREEAMCertificate>
+  <frc-vt-i:RenovationYear contextRef="context_19">2017</frc-vt-i:RenovationYear>
+  <frc-vt-i:OtherInformationCommercialRealEstate contextRef="context_19">Overige informatie</frc-vt-i:OtherInformationCommercialRealEstate>
+  <frc-vt-i:MarketValueBasedOnSpecialAssumption contextRef="context_19">0</frc-vt-i:MarketValueBasedOnSpecialAssumption>
+  <frc-vt-i:DiscountRateDCF decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:DiscountRateDCF>
+  <frc-vt-i:DiscountRateGroundLease decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:DiscountRateGroundLease>
+  <frc-vt-i:DiscountRateCorrectionsDCFAssumptions decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:DiscountRateCorrectionsDCFAssumptions>
+  <frc-vt-i:TransferCostPercentageDCFAssumptions decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:TransferCostPercentageDCFAssumptions>
+  <frc-vt-i:ExitYieldNetMarketRentBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:ExitYieldNetMarketRentBeforeTransferCost>
+  <frc-vt-i:VAT decimals="INF" contextRef="context_19" unitRef="pure">.21</frc-vt-i:VAT>
+  <frc-vt-i:TimingRentIncome contextRef="context_19">20</frc-vt-i:TimingRentIncome>
+  <frc-vt-i:TimingOperatingExpenses contextRef="context_19">20</frc-vt-i:TimingOperatingExpenses>
+  <frc-vt-i:ValuationPeriodDCFCommercial decimals="INF" contextRef="context_19" unitRef="pure">1</frc-vt-i:ValuationPeriodDCFCommercial>
+  <frc-vt-i:MarketRentGrossInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketRentGrossInitialYieldAssumptions>
+  <frc-vt-i:DiscountRateCorrectionsGrossInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="pure">.5</frc-vt-i:DiscountRateCorrectionsGrossInitialYieldAssumptions>
+  <frc-vt-i:TransferCostPercentageGrossInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="pure">0.03</frc-vt-i:TransferCostPercentageGrossInitialYieldAssumptions>
+  <frc-vt-i:CorrectionRevisionaryPotential decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionRevisionaryPotential>
+  <frc-vt-i:CorrectionMutationVacancy decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionMutationVacancy>
+  <frc-vt-i:CorrectionInitialVacancy decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionInitialVacancy>
+  <frc-vt-i:CorrectionMutationExpenses decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionMutationExpenses>
+  <frc-vt-i:CorrectionVATCompensation decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionVATCompensation>
+  <frc-vt-i:CorrectionNonDeductableVAT decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionNonDeductableVAT>
+  <frc-vt-i:CorrectionDeferredMaintenance decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionDeferredMaintenance>
+  <frc-vt-i:CorrectionGroundLease decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionGroundLease>
+  <frc-vt-i:CorrectionOtherIncomeExpenses decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:CorrectionOtherIncomeExpenses>
+  <frc-vt-i:TotalCorrections decimals="INF" contextRef="context_19" unitRef="eur">9000</frc-vt-i:TotalCorrections>
+  <frc-vt-i:MarketRentNetInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketRentNetInitialYieldAssumptions>
+  <frc-vt-i:AverageFixedCostPerYear decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:AverageFixedCostPerYear>
+  <frc-vt-i:AverageMaintenancePerYear decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:AverageMaintenancePerYear>
+  <frc-vt-i:AverageGroundLeasePerYear decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:AverageGroundLeasePerYear>
+  <frc-vt-i:AverageOtherCostPerYear decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:AverageOtherCostPerYear>
+  <frc-vt-i:AveragePropertyManagementPerYear decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:AveragePropertyManagementPerYear>
+  <frc-vt-i:AverageExploitationCostPerYear decimals="INF" contextRef="context_19" unitRef="eur">5000</frc-vt-i:AverageExploitationCostPerYear>
+  <frc-vt-i:DiscountRateCorrectionsNetInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:DiscountRateCorrectionsNetInitialYieldAssumptions>
+  <frc-vt-i:TransferCostPercentageNetInitialYieldAssumptions decimals="INF" contextRef="context_19" unitRef="pure">0.03</frc-vt-i:TransferCostPercentageNetInitialYieldAssumptions>
+  <frc-vt-i:MarketValueBeforeCorrectionBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketValueBeforeCorrectionBeforeTransferCost>
+  <frc-vt-i:MarketValueBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketValueBeforeTransferCost>
+  <frc-vt-i:TransferCost decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:TransferCost>
+  <frc-vt-i:MarketValueAfterTransferCost decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketValueAfterTransferCost>
+  <frc-vt-i:MarketValueAfterTransferCostRounded decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketValueAfterTransferCostRounded>
+  <frc-vt-i:DiscountRateDCFKPI decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:DiscountRateDCFKPI>
+  <frc-vt-i:ExitYieldGrossMarketRentBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:ExitYieldGrossMarketRentBeforeTransferCost>
+  <frc-vt-i:ExitYieldTheoreticalRentBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:ExitYieldTheoreticalRentBeforeTransferCost>
+  <frc-vt-i:GrossInitialYieldAfterTransferCostContractRentPerYear decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:GrossInitialYieldAfterTransferCostContractRentPerYear>
+  <frc-vt-i:GrossInitialYieldAfterTransferCostMarketRentPerYear decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:GrossInitialYieldAfterTransferCostMarketRentPerYear>
+  <frc-vt-i:GrossInitialYieldAfterTransferCostTheoreticalRentPerYear decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:GrossInitialYieldAfterTransferCostTheoreticalRentPerYear>
+  <frc-vt-i:GrossInitialYield decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:GrossInitialYield>
+  <frc-vt-i:NetInitialYield decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:NetInitialYield>
+  <frc-vt-i:NetInitialYieldAfterCorrectionMarketRentBeforeTransferCost decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:NetInitialYieldAfterCorrectionMarketRentBeforeTransferCost>
+  <frc-vt-i:InternalRateOfReturn decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:InternalRateOfReturn>
+  <frc-vt-i:OperatingExpensesPercentageMarketRentPerYear decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:OperatingExpensesPercentageMarketRentPerYear>
+  <frc-vt-i:VacancyPercentageMarketRentPerYear decimals="INF" contextRef="context_19" unitRef="pure">.05</frc-vt-i:VacancyPercentageMarketRentPerYear>
+  <frc-vt-i:SettlementsRentBySale decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:SettlementsRentBySale>
+  <frc-vt-i:PrimeRent decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:PrimeRent>
+  <frc-vt-i:ValueConcept contextRef="context_21">20</frc-vt-i:ValueConcept>
+  <frc-vt-i:TypeOfTransferCost contextRef="context_21">1</frc-vt-i:TypeOfTransferCost>
+  <frc-vt-i:ValuationAmount decimals="INF" contextRef="context_21" unitRef="eur">100000</frc-vt-i:ValuationAmount>
+  <frc-vt-i:CalculationModelUsed contextRef="context_21">30</frc-vt-i:CalculationModelUsed>
+  <frc-vt-i:OwnExcelModel contextRef="context_21">1</frc-vt-i:OwnExcelModel>
+  <frc-vt-i:CashflowPerYear decimals="INF" contextRef="context_22" unitRef="eur">10000</frc-vt-i:CashflowPerYear>
+  <frc-vt-i:GroundLeaseStartDate contextRef="context_24">2019-01-01</frc-vt-i:GroundLeaseStartDate>
+  <frc-vt-i:GroundLeaseEndDate contextRef="context_24">2068-12-31</frc-vt-i:GroundLeaseEndDate>
+  <frc-vt-i:GroundLeaseRevisionDate contextRef="context_24">2068-12-31</frc-vt-i:GroundLeaseRevisionDate>
+  <frc-vt-i:GroundLeaseType contextRef="context_24">1</frc-vt-i:GroundLeaseType>
+  <frc-vt-i:GroundLeaseCanon decimals="INF" contextRef="context_24" unitRef="eur">10000</frc-vt-i:GroundLeaseCanon>
+  <frc-vt-i:IncentivesTotal decimals="INF" contextRef="context_26" unitRef="eur">1000</frc-vt-i:IncentivesTotal>
+  <frc-vt-i:IndexUsed contextRef="context_27">10</frc-vt-i:IndexUsed>
+  <frc-vt-i:IndexUsedDescription contextRef="context_27">Beschrijving</frc-vt-i:IndexUsedDescription>
+  <frc-vt-i:IndexTypeOfUse contextRef="context_27">1</frc-vt-i:IndexTypeOfUse>
+  <frc-vt-i:DenominationMethod contextRef="context_27">Beschrijving</frc-vt-i:DenominationMethod>
+  <frc-vt-i:IndexDelayNominator contextRef="context_27">P1M</frc-vt-i:IndexDelayNominator>
+  <frc-vt-i:IndexDelayDenominator contextRef="context_27">P1M</frc-vt-i:IndexDelayDenominator>
+  <frc-vt-i:IndexEffectiveDate contextRef="context_27">2022-01-01</frc-vt-i:IndexEffectiveDate>
+  <frc-vt-i:IndexFrequency contextRef="context_27">jaarlijks</frc-vt-i:IndexFrequency>
+  <frc-vt-i:IndexStartYear contextRef="context_27">2010</frc-vt-i:IndexStartYear>
+  <frc-vt-i:AdditionalRaisePercentage decimals="INF" contextRef="context_27" unitRef="pure">.01</frc-vt-i:AdditionalRaisePercentage>
+  <frc-vt-i:BreakParty contextRef="context_28">Huurder</frc-vt-i:BreakParty>
+  <frc-vt-i:BreakPenalty decimals="INF" contextRef="context_28" unitRef="eur">100</frc-vt-i:BreakPenalty>
+  <frc-vt-i:BreakPenaltyPayingParty contextRef="context_28">Huurder</frc-vt-i:BreakPenaltyPayingParty>
+  <frc-vt-i:BreakRollingOption contextRef="context_28">0</frc-vt-i:BreakRollingOption>
+  <frc-vt-i:BreakDateFirstPossible contextRef="context_28">2023-01-01</frc-vt-i:BreakDateFirstPossible>
+  <frc-vt-i:BreakDateLastPossible contextRef="context_28">2023-01-01</frc-vt-i:BreakDateLastPossible>
+  <frc-vt-i:LinkedToSpace contextRef="context_29">0</frc-vt-i:LinkedToSpace>
+  <frc-vt-i:AreaLeased decimals="INF" contextRef="context_29" unitRef="sqm">150</frc-vt-i:AreaLeased>
+  <frc-vt-i:TenantName contextRef="context_31">R. Hein</frc-vt-i:TenantName>
+  <frc-vt-i:SourcesAgreements contextRef="context_31">Nee</frc-vt-i:SourcesAgreements>
+  <nl-cd:DescriptionLocationNL contextRef="context_31">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_31">Straatweg</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_31">1</nl-cd:HouseNumberNL>
+  <nl-cd:HouseNumberAddition contextRef="context_31">a</nl-cd:HouseNumberAddition>
+  <frc-vt-i:TenantType contextRef="context_31">1</frc-vt-i:TenantType>
+  <frc-vt-i:PaymentArrears contextRef="context_31">1</frc-vt-i:PaymentArrears>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_31">56565656</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:PostalCodeNL contextRef="context_31">1111AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_31">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <nl-cd:CountryCodeISO contextRef="context_31">NLD</nl-cd:CountryCodeISO>
+  <frc-vt-i:FirstDayOfTerm contextRef="context_32">2019-01-01</frc-vt-i:FirstDayOfTerm>
+  <frc-vt-i:LastDayOfTerm contextRef="context_32">2025-01-01</frc-vt-i:LastDayOfTerm>
+  <frc-vt-i:NoticePeriodInMonths decimals="INF" contextRef="context_32" unitRef="pure">1</frc-vt-i:NoticePeriodInMonths>
+  <frc-vt-i:VATOpted contextRef="context_32">0</frc-vt-i:VATOpted>
+  <frc-vt-i:AreaLeased decimals="INF" contextRef="context_32" unitRef="sqm">150</frc-vt-i:AreaLeased>
+  <frc-vt-i:GrossStartingRentPerYear decimals="INF" contextRef="context_32" unitRef="eur">1000</frc-vt-i:GrossStartingRentPerYear>
+  <frc-vt-i:GrossRentPerValueReferenceDate decimals="INF" contextRef="context_32" unitRef="eur">1000</frc-vt-i:GrossRentPerValueReferenceDate>
+  <frc-vt-i:DateOfInterestRateRevision contextRef="context_32">2020-01-01</frc-vt-i:DateOfInterestRateRevision>
+  <frc-vt-i:ActiveReviewStores contextRef="context_32">0</frc-vt-i:ActiveReviewStores>
+  <frc-vt-i:LeaseRenewalRate decimals="INF" contextRef="context_32" unitRef="pure">.05</frc-vt-i:LeaseRenewalRate>
+  <frc-vt-i:MutationCostsAfterCurrentTenantPerSquareMeter decimals="INF" contextRef="context_32" unitRef="eur">10</frc-vt-i:MutationCostsAfterCurrentTenantPerSquareMeter>
+  <frc-vt-i:ServiceCostsOwnerPerSquareMeter decimals="INF" contextRef="context_32" unitRef="eur">10</frc-vt-i:ServiceCostsOwnerPerSquareMeter>
+  <frc-vt-i:PromotionalCostsPercentageRentalValue decimals="INF" contextRef="context_32" unitRef="pure">.05</frc-vt-i:PromotionalCostsPercentageRentalValue>
+  <frc-vt-i:RentalFeePercentageRentalValue decimals="INF" contextRef="context_32" unitRef="pure">.05</frc-vt-i:RentalFeePercentageRentalValue>
+  <frc-vt-i:LeaseReferencesExplanation contextRef="context_33">Toelichting</frc-vt-i:LeaseReferencesExplanation>
+  <nl-cd:DescriptionLocationNL contextRef="context_33">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_33">Straatweg</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_33">2</nl-cd:HouseNumberNL>
+  <nl-cd:PostalCodeNL contextRef="context_33">1111AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_33">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <nl-cd:CountryCodeISO contextRef="context_33">NLD</nl-cd:CountryCodeISO>
+  <frc-vt-i:TransactionDate contextRef="context_34">2019-12-30</frc-vt-i:TransactionDate>
+  <frc-vt-i:ConstructionYear contextRef="context_34">1970</frc-vt-i:ConstructionYear>
+  <frc-vt-i:LeaseRent decimals="INF" contextRef="context_34" unitRef="eur">12000</frc-vt-i:LeaseRent>
+  <frc-vt-i:MarketRent decimals="INF" contextRef="context_34" unitRef="eur">12000</frc-vt-i:MarketRent>
+  <frc-vt-i:NetLettableAreaLeased decimals="INF" contextRef="context_34" unitRef="sqm">200</frc-vt-i:NetLettableAreaLeased>
+  <frc-vt-i:LeaseIncentives decimals="INF" contextRef="context_34" unitRef="eur">100</frc-vt-i:LeaseIncentives>
+  <frc-vt-i:MarketRentPerSquareMeter decimals="INF" contextRef="context_34" unitRef="eur">100</frc-vt-i:MarketRentPerSquareMeter>
+  <frc-vt-i:NationalMonument contextRef="context_35">0</frc-vt-i:NationalMonument>
+  <frc-vt-i:ProvinceMonument contextRef="context_35">0</frc-vt-i:ProvinceMonument>
+  <frc-vt-i:CountyMonument contextRef="context_35">0</frc-vt-i:CountyMonument>
+  <frc-vt-i:ProtectedCountyView contextRef="context_35">0</frc-vt-i:ProtectedCountyView>
+  <frc-vt-i:MonumentInformationExplanation contextRef="context_35">Toelichting</frc-vt-i:MonumentInformationExplanation>
+  <frc-vt-i:ValuationPeriodCashflow decimals="INF" contextRef="context_35" unitRef="pure">1</frc-vt-i:ValuationPeriodCashflow>
+  <frc-vt-i:CashflowExitValue decimals="INF" contextRef="context_35" unitRef="eur">1000</frc-vt-i:CashflowExitValue>
+  <frc-vt-i:NPV decimals="INF" contextRef="context_35" unitRef="eur">1000</frc-vt-i:NPV>
+  <frc-vt-i:UsageSituation contextRef="context_35">us_ctp</frc-vt-i:UsageSituation>
+  <frc-vt-i:AreaSourceType contextRef="context_35">0</frc-vt-i:AreaSourceType>
+  <frc-vt-i:OtherRelevantInformation contextRef="context_35">Toelichting</frc-vt-i:OtherRelevantInformation>
+  <frc-vt-i:FullValuationReferenceByRevaluationOrUpdate contextRef="context_35">11</frc-vt-i:FullValuationReferenceByRevaluationOrUpdate>
+  <frc-vt-i:OtherValueComponent contextRef="context_35">3</frc-vt-i:OtherValueComponent>
+  <frc-vt-i:OtherValueAmount decimals="INF" contextRef="context_35" unitRef="eur">1000</frc-vt-i:OtherValueAmount>
+  <frc-vt-i:OtherValueDescription contextRef="context_35">Toelichting</frc-vt-i:OtherValueDescription>
+  <frc-vt-i:MasterReference contextRef="context_36">33</frc-vt-i:MasterReference>
+  <frc-vt-i:MasterReferenceAllocatedByPartyType contextRef="context_36">Controlerende instantie</frc-vt-i:MasterReferenceAllocatedByPartyType>
+  <frc-vt-i:MasterReferenceAllocatedByPartyReferenceDescription contextRef="context_36">Toelichting</frc-vt-i:MasterReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:MasterReferenceDescription contextRef="context_36">Toelichting</frc-vt-i:MasterReferenceDescription>
+  <frc-vt-i:MasterAdditionDefinition contextRef="context_36">Omschrijving</frc-vt-i:MasterAdditionDefinition>
+  <frc-vt-i:AdditionDefinitionValuation contextRef="context_37">Omschrijving</frc-vt-i:AdditionDefinitionValuation>
+  <frc-vt-i:ActualUse contextRef="context_37">10</frc-vt-i:ActualUse>
+  <frc-vt-i:LeasedOrUsedByOwner contextRef="context_37">2</frc-vt-i:LeasedOrUsedByOwner>
+  <frc-vt-i:IPDTypeProperty contextRef="context_37">20</frc-vt-i:IPDTypeProperty>
+  <frc-vt-i:RenovationYear contextRef="context_38">2017</frc-vt-i:RenovationYear>
+  <frc-vt-i:IPDSubtype contextRef="context_37">bc305</frc-vt-i:IPDSubtype>
+  <frc-vt-i:GroundPollution contextRef="context_35">0</frc-vt-i:GroundPollution>
+  <frc-vt-i:ObjectPollution contextRef="context_35">0</frc-vt-i:ObjectPollution>
+  <frc-vt-i:RemovalPollutionCost decimals="INF" contextRef="context_35" unitRef="eur">1000</frc-vt-i:RemovalPollutionCost>
+  <frc-vt-i:SoundPollution contextRef="context_35">0</frc-vt-i:SoundPollution>
+  <frc-vt-i:AirPollution contextRef="context_35">0</frc-vt-i:AirPollution>
+  <frc-vt-i:CommentSaleComparable contextRef="context_39">Toelichting</frc-vt-i:CommentSaleComparable>
+  <nl-cd:DescriptionLocationNL contextRef="context_39">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_39">Straatweg</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_39">5</nl-cd:HouseNumberNL>
+  <nl-cd:PostalCodeNL contextRef="context_39">1111AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_39">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <nl-cd:CountryCodeISO contextRef="context_39">NLD</nl-cd:CountryCodeISO>
+  <frc-vt-i:TransactionDate contextRef="context_40">2019-12-30</frc-vt-i:TransactionDate>
+  <frc-vt-i:ConstructionYear contextRef="context_40">1970</frc-vt-i:ConstructionYear>
+  <frc-vt-i:NetLettableAreaLeased decimals="INF" contextRef="context_40" unitRef="sqm">150</frc-vt-i:NetLettableAreaLeased>
+  <frc-vt-i:GrossFloorArea decimals="INF" contextRef="context_40" unitRef="sqm">500</frc-vt-i:GrossFloorArea>
+  <frc-vt-i:WeightedAverageLeaseExpiry decimals="INF" contextRef="context_40" unitRef="pure">100</frc-vt-i:WeightedAverageLeaseExpiry>
+  <frc-vt-i:PurchasePriceAfterTransferCost decimals="INF" contextRef="context_40" unitRef="eur">100000</frc-vt-i:PurchasePriceAfterTransferCost>
+  <frc-vt-i:GrossInitialYieldAfterTransferCost decimals="INF" contextRef="context_40" unitRef="pure">.05</frc-vt-i:GrossInitialYieldAfterTransferCost>
+  <frc-vt-i:LeaseRent decimals="INF" contextRef="context_40" unitRef="eur">12000</frc-vt-i:LeaseRent>
+  <frc-vt-i:MarketRent decimals="INF" contextRef="context_40" unitRef="eur">12000</frc-vt-i:MarketRent>
+  <frc-vt-i:PurchasePricePerSquareMeter decimals="INF" contextRef="context_40" unitRef="eur">1000</frc-vt-i:PurchasePricePerSquareMeter>
+  <frc-vt-i:NamePurchasingParty contextRef="context_40">R Jansen</frc-vt-i:NamePurchasingParty>
+  <frc-vt-i:NameSeller contextRef="context_40">H Moerman</frc-vt-i:NameSeller>
+  <frc-vt-i:LandRegisterLotSaleDate contextRef="context_42">2019-01-07</frc-vt-i:LandRegisterLotSaleDate>
+  <frc-vt-i:LandRegisterLotSalePrice decimals="INF" contextRef="context_42" unitRef="eur">200000</frc-vt-i:LandRegisterLotSalePrice>
+  <frc-vt-i:DescriptionLocationCommercialPart contextRef="context_20">Omschrijving</frc-vt-i:DescriptionLocationCommercialPart>
+  <frc-vt-i:WeightedAverageLeaseExpiryCommercialResult decimals="INF" contextRef="context_19" unitRef="pure">1</frc-vt-i:WeightedAverageLeaseExpiryCommercialResult>
+  <frc-vt-i:MarketValueAfterTransferCostPerSquareMeter decimals="INF" contextRef="context_19" unitRef="eur">1000</frc-vt-i:MarketValueAfterTransferCostPerSquareMeter>
+  <frc-vt-i:InspectionDate contextRef="context_43">2020-12-23</frc-vt-i:InspectionDate>
+  <frc-vt-i:InspectionDoneBy contextRef="context_43">Taxateur 1</frc-vt-i:InspectionDoneBy>
+  <frc-vt-i:InspectionDegree contextRef="context_43">id_fv</frc-vt-i:InspectionDegree>
+  <frc-vt-i:InspectionExplanation contextRef="context_43">Toelichting</frc-vt-i:InspectionExplanation>
+  <frc-vt-i:LeaseAreaMeasurementDate contextRef="context_43">2020-12-23</frc-vt-i:LeaseAreaMeasurementDate>
+  <frc-vt-i:DateAssignmentAccepted contextRef="context_44">2020-12-15</frc-vt-i:DateAssignmentAccepted>
+  <frc-vt-i:ValuationPurpose contextRef="context_44">15</frc-vt-i:ValuationPurpose>
+  <frc-vt-i:PurposeExplanation contextRef="context_44">Toelichting</frc-vt-i:PurposeExplanation>
+  <frc-vt-i:ValuationType contextRef="context_44">30</frc-vt-i:ValuationType>
+  <frc-vt-i:EarlierInvolvement contextRef="context_35">0</frc-vt-i:EarlierInvolvement>
+  <frc-vt-i:BusinessInterest contextRef="context_35">0</frc-vt-i:BusinessInterest>
+  <frc-vt-i:SizeAssignment contextRef="context_35">0</frc-vt-i:SizeAssignment>
+  <frc-vt-i:PlausibilityCheck contextRef="context_35">0</frc-vt-i:PlausibilityCheck>
+  <frc-vt-i:PlausibilitySecondValuator contextRef="context_35">Verklaring</frc-vt-i:PlausibilitySecondValuator>
+  <frc-vt-i:ValuationStandardsAndGuidelines contextRef="context_35">Toelichting</frc-vt-i:ValuationStandardsAndGuidelines>
+  <frc-vt-i:StatementOfEventsAfterTheValuationDate contextRef="context_35">Verklaring</frc-vt-i:StatementOfEventsAfterTheValuationDate>
+  <frc-vt-i:StatementRightsInRem contextRef="context_35">Verklaring</frc-vt-i:StatementRightsInRem>
+  <frc-vt-i:ExplanationOfDestinationAndPossibilitiesForUse contextRef="context_35">Verklaring</frc-vt-i:ExplanationOfDestinationAndPossibilitiesForUse>
+  <frc-vt-i:EnvironmentalAspectsStatement contextRef="context_35">Verklaring</frc-vt-i:EnvironmentalAspectsStatement>
+  <frc-vt-i:ValuationUncertaintyStatement contextRef="context_35">Verklaring</frc-vt-i:ValuationUncertaintyStatement>
+  <frc-vt-i:AdditionalDeclarations contextRef="context_35">Toelichting</frc-vt-i:AdditionalDeclarations>
+  <frc-vt-i:ValueConcept contextRef="context_45">20</frc-vt-i:ValueConcept>
+  <frc-vt-i:ValuationAmount decimals="INF" contextRef="context_45" unitRef="eur">100000</frc-vt-i:ValuationAmount>
+  <frc-vt-i:DocumentReportingDate contextRef="context_45">2019-11-01</frc-vt-i:DocumentReportingDate>
+  <frc-vt-i:ValuationType contextRef="context_45">30</frc-vt-i:ValuationType>
+  <frc-vt-i:Remarks contextRef="context_45">Opmerking</frc-vt-i:Remarks>
+  <frc-vt-i:IndexInflation decimals="INF" contextRef="context_46" unitRef="pure">.01</frc-vt-i:IndexInflation>
+  <frc-vt-i:IndexCosts decimals="INF" contextRef="context_46" unitRef="pure">.01</frc-vt-i:IndexCosts>
+  <frc-vt-i:IndexMarketRent decimals="INF" contextRef="context_46" unitRef="pure">.01</frc-vt-i:IndexMarketRent>
+  <frc-vt-i:IndexVacancy decimals="INF" contextRef="context_46" unitRef="pure">.01</frc-vt-i:IndexVacancy>
+  <frc-vt-i:ValuedInterest contextRef="context_35">2</frc-vt-i:ValuedInterest>
+  <frc-vt-i:Principles contextRef="context_35">Uitgangspunten</frc-vt-i:Principles>
+  <frc-vt-i:SpecialPrinciples contextRef="context_35">Uitgangspunten</frc-vt-i:SpecialPrinciples>
+  <frc-vt-i:AssumptionExplanation contextRef="context_35">Toelichting</frc-vt-i:AssumptionExplanation>
+  <frc-vt-i:Disclaimer contextRef="context_35">Toelichting</frc-vt-i:Disclaimer>
+  <frc-vt-i:MarketRentUsedExplanation contextRef="context_35">Verklaring</frc-vt-i:MarketRentUsedExplanation>
+  <frc-vt-i:ValuationPeriodIndices contextRef="context_35">12 maanden</frc-vt-i:ValuationPeriodIndices>
+  <frc-vt-i:Strengths contextRef="context_35">Toelichting</frc-vt-i:Strengths>
+  <frc-vt-i:Weaknesses contextRef="context_35">Toelichting</frc-vt-i:Weaknesses>
+  <frc-vt-i:Opportunities contextRef="context_35">Toelichting</frc-vt-i:Opportunities>
+  <frc-vt-i:Threats contextRef="context_35">Toelichting</frc-vt-i:Threats>
+  <frc-vt-i:MarketabilitySales contextRef="context_35">50</frc-vt-i:MarketabilitySales>
+  <frc-vt-i:MarketabilityRent contextRef="context_35">25</frc-vt-i:MarketabilityRent>
+  <frc-vt-i:HighestAndBestUseDescription contextRef="context_35">Toelichting</frc-vt-i:HighestAndBestUseDescription>
+  <frc-vt-i:MarketvisionCountry contextRef="context_35">Toelichting</frc-vt-i:MarketvisionCountry>
+  <frc-vt-i:MarketvisionLocal contextRef="context_35">Toelichting</frc-vt-i:MarketvisionLocal>
+  <frc-vt-i:LocationOverallAssessment contextRef="context_35">50</frc-vt-i:LocationOverallAssessment>
+  <frc-vt-i:AccessibilityGeneralConclusion contextRef="context_35">50</frc-vt-i:AccessibilityGeneralConclusion>
+  <frc-vt-i:AccessibilityCars contextRef="context_35">5</frc-vt-i:AccessibilityCars>
+  <frc-vt-i:AccessibilityPublicTransport contextRef="context_35">5</frc-vt-i:AccessibilityPublicTransport>
+  <frc-vt-i:AccessibilityTrucks contextRef="context_35">5</frc-vt-i:AccessibilityTrucks>
+  <frc-vt-i:ParkingPublic contextRef="context_35">100</frc-vt-i:ParkingPublic>
+  <frc-vt-i:LocationalPosition contextRef="context_35">50</frc-vt-i:LocationalPosition>
+  <frc-vt-i:ObjectOverallAssessment contextRef="context_35">25</frc-vt-i:ObjectOverallAssessment>
+  <frc-vt-i:ConstructionState contextRef="context_35">25</frc-vt-i:ConstructionState>
+  <frc-vt-i:MaintenanceStateInterior contextRef="context_35">25</frc-vt-i:MaintenanceStateInterior>
+  <frc-vt-i:MaintenanceStateExterior contextRef="context_35">25</frc-vt-i:MaintenanceStateExterior>
+  <frc-vt-i:MaintenanceGeneralAssessment contextRef="context_35">25</frc-vt-i:MaintenanceGeneralAssessment>
+  <frc-vt-i:Functionality contextRef="context_35">25</frc-vt-i:Functionality>
+  <frc-vt-i:AlternativeUseObject contextRef="context_35">25</frc-vt-i:AlternativeUseObject>
+  <frc-vt-i:ParkingOnSite contextRef="context_35">25</frc-vt-i:ParkingOnSite>
+  <frc-vt-i:Reference contextRef="context_47">66</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByPartyType contextRef="context_47">Controlerende instantie</frc-vt-i:ReferenceAllocatedByPartyType>
+  <frc-vt-i:ReferenceAllocatedByPartyReferenceDescription contextRef="context_47">Beschrijving</frc-vt-i:ReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:ReferenceDescription contextRef="context_47">Omschrijving</frc-vt-i:ReferenceDescription>
+  <frc-vt-i:UnitType contextRef="context_48">3</frc-vt-i:UnitType>
+  <frc-vt-i:UnitNameDescriptive contextRef="context_48">Beschrijving</frc-vt-i:UnitNameDescriptive>
+  <frc-vt-i:UnitExplanation contextRef="context_48">Toelichting</frc-vt-i:UnitExplanation>
+  <frc-vt-i:UnitAreaTotal decimals="INF" contextRef="context_48" unitRef="sqm">500</frc-vt-i:UnitAreaTotal>
+  <frc-vt-i:GrossFloorArea decimals="INF" contextRef="context_48" unitRef="sqm">150</frc-vt-i:GrossFloorArea>
+  <frc-vt-i:UnitAreaRented decimals="INF" contextRef="context_48" unitRef="sqm">150</frc-vt-i:UnitAreaRented>
+  <frc-vt-i:MaintenanceCategory contextRef="context_48">Toelichting</frc-vt-i:MaintenanceCategory>
+  <frc-vt-i:BasicMaintenance decimals="INF" contextRef="context_48" unitRef="eur">100</frc-vt-i:BasicMaintenance>
+  <frc-vt-i:ReplacementValue decimals="INF" contextRef="context_48" unitRef="eur">100</frc-vt-i:ReplacementValue>
+  <frc-vt-i:MarketRent decimals="INF" contextRef="context_48" unitRef="eur">1000</frc-vt-i:MarketRent>
+  <frc-vt-i:MarketRentResidential decimals="INF" contextRef="context_9" unitRef="eur">5000</frc-vt-i:MarketRentResidential>
+  <frc-vt-i:CalculationModelUsed contextRef="context_9">30</frc-vt-i:CalculationModelUsed>
+  <frc-vt-i:OwnExcelModel contextRef="context_9">1</frc-vt-i:OwnExcelModel>
+  <frc-vt-i:ScopeValuation contextRef="context_44">1</frc-vt-i:ScopeValuation>
+  <frc-vt-i:NetFloorArea decimals="INF" contextRef="context_48" unitRef="sqm">100</frc-vt-i:NetFloorArea>
+</xbrli:xbrl>

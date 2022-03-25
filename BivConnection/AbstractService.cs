@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Net.Security;
 using System.Reflection;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
@@ -18,26 +19,15 @@ namespace BivConnection
         // Not included in example, replace with the certificate of the BIV server you connect with.
         private const string ServerCertPath = "BivConnection.Cert.Server.crt";
 
-        // Preconfigured for BTA, for production use btp-frcportaal
-        private const string EndPointUrl = "https://bta-frcportaal.nl/";
+        // Preconfigured for BTT, for production use btp-frcportaal.nl
+        private const string EndPointUrl = "https://btt-frcportaal.nl/";
 
         protected const string ContentsPath = "BivConnection.Docs.";
 
         private static X509Certificate2 GetEmbeddedCertificate(string filename, SecureString password = null)
         {
             var bytes = GetEmbeddedFile(filename);
-
-            // http://paulstovell.com/blog/x509certificate2 Tip #5
-            var tmpFileName = Path.Combine(Path.GetTempPath(), $"BivConnection-{Guid.NewGuid()}");
-            try
-            {
-                File.WriteAllBytes(tmpFileName, bytes);
-                return password == null || password.Length == 0 ? new X509Certificate2(tmpFileName) : new X509Certificate2(tmpFileName, password);
-            }
-            finally
-            {
-                File.Delete(tmpFileName);
-            }
+            return password != null ? new X509Certificate2(bytes, password, X509KeyStorageFlags.DefaultKeySet) : new X509Certificate2(bytes);
         }
 
         protected static byte[] GetEmbeddedFile(string path)
@@ -70,7 +60,7 @@ namespace BivConnection
             asymmetricSecurityBindingElement.AllowSerializedSigningTokenOnReply = true;
 
             //Create binding element for encoding
-            var encodingBindingElement = new TextMessageEncodingBindingElement(MessageVersion.Soap11WSAddressing10, Encoding.UTF8);
+            var encodingBindingElement = new MtomMessageEncodingBindingElement(MessageVersion.Soap11WSAddressing10, Encoding.UTF8);
 
             //Create binding element for transport
             var httpsTransportBindingElement = new HttpsTransportBindingElement
@@ -95,7 +85,12 @@ namespace BivConnection
             factory.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
             factory.Credentials.ClientCertificate.Certificate = certClient;
             factory.Credentials.ServiceCertificate.DefaultCertificate = certService;
-
+            System.Net.ServicePointManager.ServerCertificateValidationCallback =
+                delegate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+                {
+                    return certificate.Equals(factory.Credentials.ServiceCertificate.DefaultCertificate);
+                };
+            
             return factory.CreateChannel();
         }
     }

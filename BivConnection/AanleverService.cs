@@ -9,10 +9,10 @@ namespace BivConnection
     internal class AanleverService : AbstractService
     {
 
-        public aanleverResponse Aanleveren(string fileName, String identifier, SecureString password, String messageType, String IdOntvanger)
+        public aanleverResponse Aanleveren(string fileName, string identifier, SecureString password, string messageType, string IdOntvanger, string[] attachmentFileNames)
         {
             Console.WriteLine("Creating request for fileName: " + fileName);
-            var request = CreateRequest(fileName, identifier, messageType, IdOntvanger);
+            var request = CreateRequest(fileName, identifier, messageType, IdOntvanger, attachmentFileNames);
 
             Console.WriteLine("Creating client");
             var client = GetClient<AanleverService_V1_2>("/biv-wus20v12/AanleverService", password);
@@ -43,8 +43,18 @@ namespace BivConnection
             }
         }
 
-        private static aanleverenRequest CreateRequest(string contentsFilename, String identifier, String messageType, String IdOntvanger)
+        private static aanleverenRequest CreateRequest(string contentsFilename, string identifier, string messageType, string IdOntvanger, string[] attachmentFileNames)
         {
+            berichtInhoudType[] bijlagen = new berichtInhoudType[attachmentFileNames.Length];
+            for(int i = 0; i < attachmentFileNames.Length; i++)
+            {
+                bijlagen[i] = new berichtInhoudType()
+                {
+                    bestandsnaam = attachmentFileNames[i],
+                    mimeType = "application/xml",
+                    inhoud = GetEmbeddedFile(ContentsPath + attachmentFileNames[i])
+                };
+            }
             return new aanleverenRequest
             {
                 aanleverRequest = new aanleverRequest
@@ -60,6 +70,7 @@ namespace BivConnection
                         mimeType = "application/xml",
                         inhoud = GetEmbeddedFile(ContentsPath + contentsFilename)
                     },
+                    berichtBijlagen = bijlagen,
                     autorisatieAdres = "http://geenausp.nl/"
                 }
             };

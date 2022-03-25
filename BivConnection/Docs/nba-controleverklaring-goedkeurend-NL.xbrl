@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of the NBA Taxonomy (NBA-T)
+  Intellectual Property of the NBA (Koninklijke Nederlandse Beroepsorganisatie van Accountants - The Royal Netherlands Institute of Chartered Accountants)
+  No part of this publication may be translated, reprinted or reproduced or utilised in any form either in whole or in part without prior permission in writing from the NBA. For more information please contact the NBA by email: sbr@nba.nl  
+  Architecture: NT12
+  Version: 2.0
+  Release date: Friday October 13 23:00:00 2017
+-->
+<xbrli:xbrl xml:lang="nl" xmlns:nba-i="http://www.nltaxonomie.nl/nba/2.0/dictionary/nba-data" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:nba-t="http://www.nltaxonomie.nl/nba/2.0/dictionary/nba-tuples" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:nl-cd="http://www.nltaxonomie.nl/nt12/sbr/20170515/dictionary/nl-common-data">
+	<link:schemaRef xlink:type="simple" xlink:href="http://www.nltaxonomie.nl/nba/2.0/entrypoints/nba-rpt-controleverklaring.xsd"/>
+	<xbrli:context id="C20170325">
+		<xbrli:entity>
+			<xbrli:identifier scheme="http://www.nba.nl/kvk-id">30267975</xbrli:identifier>
+		</xbrli:entity>
+		<xbrli:period>
+			<xbrli:startDate>2017-03-25</xbrli:startDate>
+			<xbrli:endDate>2017-03-25</xbrli:endDate>
+		</xbrli:period>
+	</xbrli:context>
+	<xbrli:unit id="pure">
+		<xbrli:measure>xbrli:pure</xbrli:measure>
+	</xbrli:unit>
+	<nba-i:AuditorsReportHeader contextRef="C20170325">CONTROLEVERKLARING VAN DE ONAFHANKELIJKE ACCOUNTANT</nba-i:AuditorsReportHeader>
+	<nba-i:Addressee contextRef="C20170325">Aan: de aandeelhouders en de raad van comissarissen van ABV B.V.</nba-i:Addressee>
+	<nba-i:ReportingTitle contextRef="C20170325">A. Verklaring over de in het jaarverslag opgenomen jaarrekening 2016</nba-i:ReportingTitle>
+	<nba-t:ProfessionalAccountantsOpinionSpecification>
+		<nba-i:ProfessionalAccountantsOpinionHeader contextRef="C20170325">Ons oordeel</nba-i:ProfessionalAccountantsOpinionHeader>
+		<nba-i:ProfessionalAccountantsOpinion contextRef="C20170325">Wij hebben de jaarrekening 2016 van ABV B.V. te Amsterdam gecontroleerd.
+
+Naar ons oordeel geeft de in dit jaarverslag opgenomen jaarrekening een getrouw beeld van de grootte en de samenstelling van het vermogen van ABV B.V. per 31 december 2016 en van het resultaat over 2016 in overeenstemming met Titel 9 Boek 2 BW.
+
+De jaarrekening bestaat uit:
+1. de geconsolideerde balans en balans per 31 december 2016;
+2. de geconsolideerde winst- en verliesrekening en winst- en verliesrekening over 2016; en
+3. de toelichting met een overzicht van de gehanteerde grondslagen voor financiële verslaggeving en andere toelichtingen.
+		</nba-i:ProfessionalAccountantsOpinion>
+	</nba-t:ProfessionalAccountantsOpinionSpecification>
+	<nba-i:EmphasisOfMatterUncertaintyAboutGoingConcernHeader contextRef="C20170325">Materiële onzekerheid over de continuïteit</nba-i:EmphasisOfMatterUncertaintyAboutGoingConcernHeader>
+	<nba-i:EmphasisOfMatterUncertaintyAboutGoingConcern contextRef="C20170325">Wij vestigen de aandacht op het onderdeel ‘continuïteit’ in de toelichting van de jaarrekening, waarin uiteengezet is dat de entiteit [omstandigheden benoemen, bijvoorbeeld: afhankelijk is van een positieve toekomstige resultaatontwikkeling en de bereidwilligheid van de bank om de financiering te blijven continueren.] Deze condities duiden op het bestaan van een onzekerheid van materieel belang op grond waarvan gerede twijfel zou kunnen bestaan over de continuïteitsveronderstelling van de entiteit.  Ons oordeel is niet aangepast als gevolg van deze aangelegenheid.</nba-i:EmphasisOfMatterUncertaintyAboutGoingConcern>
+	<nba-t:BasisProfessionalAccountantsOpinionSpecification>
+		<nba-i:BasisProfessionalAccountantsOpinionHeader contextRef="C20170325">De basis voor ons oordeel</nba-i:BasisProfessionalAccountantsOpinionHeader>
+		<nba-i:BasisProfessionalAccountantsOpinion contextRef="C20170325">Wij hebben onze controle uitgevoerd volgens het Nederlands recht, waaronder ook de Nederlandse controlestandaarden vallen. Onze verantwoordelijkheden op grond hiervan zijn beschreven in de sectie 'Onze verantwoordelijkheden voor de controle van de jaarrekening'.
+
+Wij zijn onafhankelijk van ABV B.V. zoals vereist in de Verordening inzake de onafhankelijkheid van accountants bij assurance-opdrachten (ViO) en andere voor de opdracht relevante onafhankelijkheidsregels in Nederland. Verder hebben wij voldaan aan de Verordening gedrags- en beroepsregels accountants (VGBA).
+
+Wij vinden dat de door ons verkregen controle-informatie voldoende en geschikt is als basis voor ons oordeel.</nba-i:BasisProfessionalAccountantsOpinion>
+	</nba-t:BasisProfessionalAccountantsOpinionSpecification>
+	<nba-i:MaterialityHeader contextRef="C20170325">Materialiteit</nba-i:MaterialityHeader>
+	<nba-i:Materiality contextRef="C20170325">Op basis van onze professionele oordeelsvorming hebben wij de materialiteit voor de jaarrekening als geheel bepaald op EUR X. De materialiteit is gebaseerd op … (nader in te vullen % van de relevante benchmark b.v. winst, omzet of andere criteria). Wij houden ook rekening met afwijkingen en/of mogelijke afwijkingen die naar onze mening voor de gebruikers van de jaarrekening om kwalitatieve redenen materieel zijn.
+
+Wij zijn met de raad van commissarissen overeengekomen dat wij aan de raad tijdens onze controle geconstateerde afwijkingen boven EUR Y rapporteren alsmede kleinere afwijkingen die naar onze mening om kwalitatieve redenen relevant zijn.</nba-i:Materiality>
+	<nba-i:ScopeGroupAuditHeader contextRef="C20170325">Reikwijdte van de groepscontrole</nba-i:ScopeGroupAuditHeader>
+	<nba-i:ScopeGroupAudit contextRef="C20170325">... (naam entiteit(en)) staat aan het hoofd van een groep van entiteiten. De financiële informatie van deze groep is opgenomen in de jaarrekening van ... (naam entiteit(en)).
+
+De groepscontrole heeft zich met name gericht op de significante onderdelen … [uitleggen wat dit betreft: significante onderdelen zoals bedoeld op grond van Standaard 600. Bijvoorbeeld groepsonderdelen in specifieke landen, groepsonderdelen met significante risico’s inzake waardering of complexe activiteiten]. Bij de groepsonderdelen aaa en bbb hebben wij zelf controlewerkzaamheden uitgevoerd. Wij hebben gebruik gemaakt van andere accountants bij de controle van onderdeel ccc. Bij andere onderdelen hebben wij beoordelingswerkzaamheden of specifieke controlewerkzaamheden uitgevoerd.
+
+Door bovengenoemde werkzaamheden bij (groeps)onderdelen, gecombineerd met aanvullende werkzaamheden op groepsniveau, hebben wij voldoende en geschikte controle-informatie met betrekking tot de financiële informatie van de groep verkregen om een oordeel te geven over de geconsolideerde jaarrekening.</nba-i:ScopeGroupAudit>
+	<nba-i:EmphasisOfKeyAuditMatterIntroductionHeader contextRef="C20170325">De kernpunten van onze controle</nba-i:EmphasisOfKeyAuditMatterIntroductionHeader>
+	<nba-i:EmphasisOfKeyAuditMatterIntroduction contextRef="C20170325">In de kernpunten van onze controle beschrijven wij zaken die naar ons professionele oordeel het meest belangrijk waren tijdens onze controle van de jaarrekening. De kernpunten van onze controle hebben wij met de raad van commissarissen gecommuniceerd, maar vormen geen volledige weergave van alles wat is besproken.
+
+Wij hebben onze controlewerkzaamheden met betrekking tot deze kernpunten bepaald in het kader van de jaarrekeningcontrole als geheel. Onze bevindingen ten aanzien van de individuele kernpunten moeten in dat kader worden bezien en niet als afzonderlijke oordelen over deze kernpunten. In aanvulling op de aangelegenheid(heden) beschreven in de paragraaf 'Materiële onzekerheid over de continuïteit' hebben wij de hieronder beschreven punten als kernpunten van de controle geselecteerd.
+	</nba-i:EmphasisOfKeyAuditMatterIntroduction>
+	<nba-t:EmphasisOfKeyAuditMatterSpecification>
+		<nba-i:EmphasisOfKeyAuditMatterHeader contextRef="C20170325">Kernpunt 1</nba-i:EmphasisOfKeyAuditMatterHeader>
+		<nba-i:EmphasisOfKeyAuditMatter contextRef="C20170325">De beschrijving van een kernpunt bevat de volgende elementen:   
+•	Een beschrijving van het kernpunt;  
+•	Een samenvatting van de uitgevoerde controlewerkzaamheden;  
+•	Indien relevant, belangrijke opmerkingen met betrekking tot de kernpunten; en  
+•	Indien relevant, een verwijzing naar toelichting of vermelding in het jaarverslag.</nba-i:EmphasisOfKeyAuditMatter>
+		<nl-cd:PresentationOrder decimals="2" contextRef="C20170325" unitRef="pure">1</nl-cd:PresentationOrder>
+	</nba-t:EmphasisOfKeyAuditMatterSpecification>
+	<nba-t:EmphasisOfKeyAuditMatterSpecification>
+		<nba-i:EmphasisOfKeyAuditMatterHeader contextRef="C20170325">Kernpunt 2</nba-i:EmphasisOfKeyAuditMatterHeader>
+		<nba-i:EmphasisOfKeyAuditMatter contextRef="C20170325">De beschrijving van een kernpunt bevat de volgende elementen:   
+•	Een beschrijving van het kernpunt;  
+•	Een samenvatting van de uitgevoerde controlewerkzaamheden;  
+•	Indien relevant, belangrijke opmerkingen met betrekking tot de kernpunten; en  
+•	Indien relevant, een verwijzing naar toelichting of vermelding in het jaarverslag.</nba-i:EmphasisOfKeyAuditMatter>
+		<nl-cd:PresentationOrder decimals="2" contextRef="C20170325" unitRef="pure">2</nl-cd:PresentationOrder>
+	</nba-t:EmphasisOfKeyAuditMatterSpecification>
+	<nba-t:EmphasisOfMatterSpecification>
+		<nba-i:EmphasisOfMatterHeader contextRef="C20170325">Gevolgen van een brand</nba-i:EmphasisOfMatterHeader>
+		<nba-i:EmphasisOfMatter contextRef="C20170325">Wij vestigen de aandacht op het onderdeel [onderdeel benoemen] in de toelichting van de jaarrekening [omstandigheden benoemen, bijvoorbeeld: waarin de gevolgen van een brand in de productiefaciliteiten van de onderneming na balansdatum zijn beschreven].  Ons oordeel is niet aangepast als gevolg van deze aangelegenheid.</nba-i:EmphasisOfMatter>
+	</nba-t:EmphasisOfMatterSpecification>
+	<nba-t:OtherMatterSpecification>
+		<nba-i:OtherMatterHeader contextRef="C20170325">Paragraaf betreffende overige aangelegenheden</nba-i:OtherMatterHeader>
+		<nba-i:OtherMatter contextRef="C20170325">Deze controleverklaring is uitsluitend bestemd voor het bestuur van ... Naam Entiteit(en) en voor ... (omschrijving specifieke verspreidingskring). Deze controleverklaring wordt uitsluitend verstrekt in het kader van ... en mag derhalve niet voor andere doeleinden worden gebruikt.</nba-i:OtherMatter>
+		<nl-cd:PresentationOrder decimals="2" contextRef="C20170325" unitRef="pure">1</nl-cd:PresentationOrder>
+	</nba-t:OtherMatterSpecification>
+	<nba-t:OtherMatterSpecification>
+		<nba-i:OtherMatterHeader contextRef="C20170325">Benoeming</nba-i:OtherMatterHeader>
+		<nba-i:OtherMatter contextRef="C20170325">Wij zijn door de raad van commissarissen op ... (datum eerste benoeming) benoemd als accountant van ABV B.V. vanaf de controle van het boekjaar ... (boekjaar) XXXX en zijn sinds die datum tot op heden de externe accountant.</nba-i:OtherMatter>
+		<nl-cd:PresentationOrder decimals="2" contextRef="C20170325" unitRef="pure">2</nl-cd:PresentationOrder>
+	</nba-t:OtherMatterSpecification>
+	<nba-i:OtherInformationTitle contextRef="C20170325">B. Verklaring over de in het jaarverslag opgenomen andere informatie</nba-i:OtherInformationTitle>
+	<nba-t:OtherInformationSpecification>
+		<nba-i:OtherInformation contextRef="C20170325">Naast de jaarrekening en onze controleverklaring daarbij, omvat het jaarverslag andere informatie, die bestaat uit:
+•	het bestuursverslag;
+•	de overige gegevens;
+•	… [bijvoorbeeld een MVO-verslag, corporate governance verslag of specifieke bijlage die het bestuur wil toevoegen aan de jaarrekening, etc.].
+
+Op grond van onderstaande werkzaamheden zijn wij van mening dat de andere informatie:
+•	met de jaarrekening verenigbaar is en geen materiële afwijkingen bevat;
+•	alle informatie bevat die op grond van Titel 9 Boek 2 BW vereist is.
+
+Wij hebben de andere informatie gelezen en hebben op basis van onze kennis en ons begrip, verkregen vanuit de jaarrekeningcontrole of anderszins, overwogen of de andere informatie materiële afwijkingen bevat.
+Met onze werkzaamheden hebben wij voldaan aan de vereisten in Titel 9 Boek 2 BW en de Nederlandse Standaard 720. Deze werkzaamheden hebben niet dezelfde diepgang als onze controlewerkzaamheden bij de jaarrekening. Het bestuur is verantwoordelijk voor het opstellen van de andere informatie, waaronder het bestuursverslag en de overige gegevens in overeenstemming met Titel 9 Boek 2 BW.</nba-i:OtherInformation>
+	</nba-t:OtherInformationSpecification>
+	<nba-i:ResponsibilityTitle contextRef="C20170325">C. Beschrijving van verantwoordelijkheden met betrekking tot de jaarrekening</nba-i:ResponsibilityTitle>
+	<nba-t:ManagementsResponsibilitySpecification>
+		<nba-i:ManagementsResponsibilityHeader contextRef="C20170325">Verantwoordelijkheden van het bestuur en de raad van commissarissen voor de jaarrekening</nba-i:ManagementsResponsibilityHeader>
+		<nba-i:ManagementsResponsibility contextRef="C20170325">Het bestuur is verantwoordelijk voor het opmaken en getrouw weergeven van de jaarrekening in overeenstemming met Titel 9 Boek 2 BW. In dit kader is het bestuur verantwoordelijk voor een zodanige interne beheersing die het bestuur noodzakelijk acht om het opmaken van de jaarrekening mogelijk te maken zonder afwijkingen van materieel belang als gevolg van fouten of fraude.
+
+Bij het opmaken van de jaarrekening moet het bestuur afwegen of de onderneming in staat is om haar werkzaamheden in continuïteit voort te zetten. Op grond van genoemd verslaggevingsstelsel moet het bestuur de jaarrekening opmaken op basis van de continuïteitsveronderstelling, tenzij het bestuur het voornemen heeft om de vennootschap te liquideren of de bedrijfsactiviteiten te beëindigen of als beëindiging het enige realistische alternatief is.
+Het bestuur moet gebeurtenissen en omstandigheden waardoor gerede twijfel zou kunnen bestaan of de onderneming haar bedrijfsactiviteiten in continuïteit kan voortzetten, toelichten in de jaarrekening.
+
+De raad van commissarissen is verantwoordelijk voor het uitoefenen van toezicht op het proces van financiële verslaggeving van de vennootschap.
+		</nba-i:ManagementsResponsibility>
+	</nba-t:ManagementsResponsibilitySpecification>
+	<nba-t:ProfessionalAccountantsResponsibilitySpecification>
+		<nba-i:ProfessionalAccountantsResponsibilityHeader contextRef="C20170325">Onze verantwoordelijkheden voor de controle van de jaarrekening</nba-i:ProfessionalAccountantsResponsibilityHeader>
+		<nba-i:ProfessionalAccountantsResponsibility contextRef="C20170325">Onze verantwoordelijkheid is het zodanig plannen en uitvoeren van een controleopdracht dat wij daarmee voldoende en geschikte controle-informatie verkrijgen voor het door ons af te geven oordeel.
+
+Onze controle is uitgevoerd met een hoge mate maar geen absolute mate van zekerheid waardoor het mogelijk is dat wij tijdens onze controle niet alle materiële fouten en fraude ontdekken.
+
+Afwijkingen kunnen ontstaan als gevolg van fraude of fouten en zijn materieel indien redelijkerwijs kan worden verwacht dat deze, afzonderlijk of gezamenlijk, van invloed kunnen zijn op de economische beslissingen die gebruikers op basis van deze jaarrekening nemen. De materialiteit beïnvloedt de aard, timing en omvang van onze controlewerkzaamheden en de evaluatie van het effect van onderkende afwijkingen op ons oordeel. 
+
+Wij hebben deze accountantscontrole professioneel kritisch uitgevoerd en hebben waar relevant professionele oordeelsvorming toegepast in overeenstemming met de Nederlandse controlestandaarden, ethische voorschriften en de onafhankelijkheidseisen. Onze controle bestond onder andere uit:
+•	het identificeren en inschatten van de risico’s dat de jaarrekening afwijkingen van materieel belang bevat als gevolg van fouten of fraude, het in reactie op deze risico’s bepalen en uitvoeren van controlewerkzaamheden en het verkrijgen van controle-informatie die voldoende en geschikt is als basis voor ons oordeel. Bij fraude is het risico dat een afwijking van materieel belang niet ontdekt wordt groter dan bij fouten. Bij fraude kan sprake zijn van samenspanning, valsheid in geschrifte, het opzettelijk nalaten transacties vast te leggen, het opzettelijk verkeerd voorstellen van zaken of het doorbreken van de interne beheersing; 
+•	het verkrijgen van inzicht in de interne beheersing die relevant is voor de controle met als doel controlewerkzaamheden te selecteren die passend zijn in de omstandigheden. Deze werkzaamheden hebben niet als doel om een oordeel uit te spreken over de effectiviteit van de interne beheersing van de entiteit; 
+•	het evalueren van de geschiktheid van de gebruikte grondslagen voor financiële verslaggeving en het evalueren van de redelijkheid van schattingen door het bestuur en de toelichtingen die daarover in de jaarrekening staan;
+•	het vaststellen dat de door het bestuur gehanteerde continuïteitsveronderstelling aanvaardbaar is. Tevens het op basis van de verkregen controle-informatie vaststellen of er gebeurtenissen en omstandigheden zijn waardoor gerede twijfel zou kunnen bestaan of de onderneming haar bedrijfsactiviteiten in continuïteit kan voortzetten. Als wij concluderen dat er een onzekerheid van materieel belang bestaat, zijn wij verplicht om aandacht in onze controleverklaring te vestigen op de relevante gerelateerde toelichtingen in de jaarrekening. Als de toelichtingen inadequaat zijn, moeten wij onze verklaring aanpassen. Onze conclusies zijn gebaseerd op de controle-informatie die verkregen is tot de datum van onze controleverklaring. Toekomstige gebeurtenissen of omstandigheden kunnen er echter toe leiden dat een onderneming haar continuïteit niet langer kan handhaven;
+•	het evalueren van de presentatie, structuur en inhoud van de jaarrekening en de daarin opgenomen toelichtingen; en
+•	het evalueren of de jaarrekening een getrouw beeld geeft van de onderliggende transacties en gebeurtenissen.
+
+Gegeven onze eindverantwoordelijkheid voor het oordeel zijn wij verantwoordelijk voor de aansturing van, het toezicht op en de uitvoering van de groepscontrole. In dit kader hebben wij de aard en omvang bepaald van de uit te voeren werkzaamheden voor de groepsonderdelen. Bepalend hierbij zijn de omvang en/of het risicoprofiel van de groepsonderdelen of de activiteiten. Op grond hiervan hebben wij de groepsonderdelen geselecteerd waarbij een controle of beoordeling van de volledige financiële informatie of specifieke posten noodzakelijk was.
+
+Wij communiceren met de raad van commissarissen onder andere over de geplande reikwijdte en timing van de controle en over de significante bevindingen die uit onze controle naar voren zijn gekomen, waaronder eventuele significante tekortkomingen in de interne beheersing.
+
+Wij bevestigen aan de raad van commissarissen dat wij de relevante ethische voorschriften over onafhankelijkheid hebben nageleefd. Wij communiceren ook met de raad over alle relaties en andere zaken die redelijkerwijs onze onafhankelijkheid kunnen beïnvloeden en over de daarmee verband houdende maatregelen om onze onafhankelijkheid te waarborgen.
+
+Wij bepalen de kernpunten van onze controle van de jaarrekening op basis van alle zaken die wij met de raad van commissarissen hebben besproken. Wij beschrijven deze kernpunten in onze controleverklaring, tenzij dit is verboden door wet- of regelgeving of in buitengewoon zeldzame omstandigheden wanneer het niet vermelden in het belang van het maatschappelijk verkeer is.</nba-i:ProfessionalAccountantsResponsibility>
+	</nba-t:ProfessionalAccountantsResponsibilitySpecification>
+	<nba-t:ProfessionalAccountantsSignatureSpecification>
+		<nba-i:ProfessionalAccountantAddress contextRef="C20170325">Amsterdam</nba-i:ProfessionalAccountantAddress>
+		<nba-i:DateOfReport contextRef="C20170325">2017-03-25</nba-i:DateOfReport>
+		<nba-i:FirmName contextRef="C20170325">XYZ Accountants N.V.</nba-i:FirmName>
+		<nba-i:ProfessionalAccountantName contextRef="C20170325">J. Klaassen RA</nba-i:ProfessionalAccountantName>
+	</nba-t:ProfessionalAccountantsSignatureSpecification>
+	<nba-i:ObjectOfExaminationNatureDescription contextRef="C20170325">Jaarrekening</nba-i:ObjectOfExaminationNatureDescription>
+	<nba-i:ObjectOfExaminationPeriodStartDate contextRef="C20170325">2016-01-01</nba-i:ObjectOfExaminationPeriodStartDate>
+	<nba-i:ObjectOfExaminationPeriodEndDate contextRef="C20170325">2016-12-31</nba-i:ObjectOfExaminationPeriodEndDate>
+	<nba-i:ObjectOfExaminationResponsibleOrganisationDescription contextRef="C20170325">ABV B.V.</nba-i:ObjectOfExaminationResponsibleOrganisationDescription>
+	<nba-i:EngagementType contextRef="C20170325">Controle</nba-i:EngagementType>
+	<nba-i:OpinionType contextRef="C20170325">Goedkeurend</nba-i:OpinionType>
+	<nba-i:EntityIdentificationType contextRef="C20170325">KVK</nba-i:EntityIdentificationType>
+	<nba-i:EntityIdentification contextRef="C20170325">87654321</nba-i:EntityIdentification>
+</xbrli:xbrl>

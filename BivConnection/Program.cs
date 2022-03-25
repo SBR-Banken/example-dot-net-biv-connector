@@ -13,20 +13,20 @@ namespace BivConnection
             Console.WriteLine("Please enter your certificate password.");
             var password = GetPassword();
 
-            // do a synchronous delivery
-            connector.XbrlFileProcessor("frc-rpt-vt-duurzaamheidsscore.xbrl", "12345678", password, "Test_SWL", "");
+            // do a annual report with assurance delivery
+            connector.XbrlFileProcessor("frc-rpt-nt-inrichtingsjaarrekening-2021.xbrl", "30267975", password, "Jaarrekening_AV","00000000123456780000", new string [] {"nba-controleverklaring-goedkeurend-NL.xbrl", "signature.xml"});
 
-            // do an asynchronous delivery
-            connector.XbrlFileProcessor("VB-01_bd-rpt-ihz-aangifte-2019-masked.xbrl", "000000012", password, "Inkomstenbelasting","00000000123456780000");
+            // do a valuation report with double signature delivery
+            connector.XbrlFileProcessor("frc-rpt-vt-taxatierapport.xbrl", "12345678", password, "Taxatie_DH", "00000000123456780000", new string [] {"signature-about-document.xml", "signature-about-signature.xml"});
             Console.WriteLine($"\nPress any key to stop application...");            
             Console.ReadKey();
         }
 
-        private void XbrlFileProcessor(string fileName, String identifier, SecureString password, String messageType, String IdOntvanger)
+        private void XbrlFileProcessor(string fileName, string identifier, SecureString password, string messageType, string IdOntvanger, string[] attachmentFileNames)
         {
             Console.WriteLine("\n===");
             var aanleverService = new AanleverService();
-            var response = aanleverService.Aanleveren(fileName, identifier, password, messageType, IdOntvanger);
+            var response = aanleverService.Aanleveren(fileName, identifier, password, messageType, IdOntvanger, attachmentFileNames);
             if (response == null) return;
 
             var kenmerk = response.kenmerk;
